@@ -1,0 +1,195 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Blogrow\n"
+"POT-Creation-Date: 2015-05-09 17:26+0100\n"
+"PO-Revision-Date: 2015-05-09 17:26+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:13
+msgid ""
+"The page you are trying to reach does not exist, or has been moved. Please "
+"use the menus or the search box to find what you are looking for."
+msgstr ""
+
+#: ../comments.php:7
+msgid "No Responses"
+msgstr ""
+
+#: ../comments.php:7
+msgid "1 Response"
+msgstr ""
+
+#: ../comments.php:7
+msgid "% Responses"
+msgstr ""
+
+#: ../comments.php:10
+msgid "Comments"
+msgstr ""
+
+#: ../comments.php:11
+msgid "Pingbacks"
+msgstr ""
+
+#: ../content.php:19
+msgid "Continue reading..."
+msgstr ""
+
+#: ../content.php:25
+msgid "by"
+msgstr ""
+
+#: ../footer.php:60
+msgid "All Rights Reserved."
+msgstr ""
+
+#: ../footer.php:66
+msgid "Powered by"
+msgstr ""
+
+#: ../footer.php:66
+msgid "Theme by"
+msgstr ""
+
+#: ../search.php:9
+msgid "For the term"
+msgstr ""
+
+#: ../search.php:11
+msgid "Please try another search:"
+msgstr ""
+
+#: ../searchform.php:3
+msgid "To search type and hit enter"
+msgstr ""
+
+#: ../single.php:22
+msgid "Pages:"
+msgstr ""
+
+#: ../single.php:24
+msgid "Tags:"
+msgstr ""
+
+#: ../functions/widgets/alx-tabs.php:27
+msgid "Recent Posts"
+msgstr ""
+
+#: ../functions/widgets/alx-tabs.php:28
+msgid "Popular Posts"
+msgstr ""
+
+#: ../functions/widgets/alx-tabs.php:29
+msgid "Recent Comments"
+msgstr ""
+
+#: ../functions/widgets/alx-tabs.php:30
+msgid "Tags"
+msgstr ""
+
+#: ../functions/widgets/alx-tabs.php:187
+msgid "says:"
+msgstr ""
+
+#: ../inc/page-title.php:17
+msgid "Search result"
+msgstr ""
+
+#: ../inc/page-title.php:19
+msgid "Search results"
+msgstr ""
+
+#: ../inc/page-title.php:25
+msgid "Error 404."
+msgstr ""
+
+#: ../inc/page-title.php:25
+msgid "Page not found!"
+msgstr ""
+
+#: ../inc/page-title.php:29
+msgid "Author:"
+msgstr ""
+
+#: ../inc/page-title.php:32
+msgid "Category:"
+msgstr ""
+
+#: ../inc/page-title.php:35
+msgid "Tagged:"
+msgstr ""
+
+#: ../inc/page-title.php:38
+msgid "Daily Archive:"
+msgstr ""
+
+#: ../inc/page-title.php:41
+msgid "Monthly Archive:"
+msgstr ""
+
+#: ../inc/page-title.php:44
+msgid "Yearly Archive:"
+msgstr ""
+
+#: ../inc/page-title.php:47 ../inc/page-title.php:49 ../inc/page-title.php:51
+#: ../inc/page-title.php:53 ../inc/page-title.php:55 ../inc/page-title.php:57
+#: ../inc/page-title.php:59 ../inc/page-title.php:61 ../inc/page-title.php:63
+msgid "Type:"
+msgstr ""
+
+#: ../inc/page-title.php:47
+msgid "Audio"
+msgstr ""
+
+#: ../inc/page-title.php:49
+msgid "Aside"
+msgstr ""
+
+#: ../inc/page-title.php:51
+msgid "Chat"
+msgstr ""
+
+#: ../inc/page-title.php:53
+msgid "Gallery"
+msgstr ""
+
+#: ../inc/page-title.php:55
+msgid "Image"
+msgstr ""
+
+#: ../inc/page-title.php:57
+msgid "Link"
+msgstr ""
+
+#: ../inc/page-title.php:59
+msgid "Quote"
+msgstr ""
+
+#: ../inc/page-title.php:61
+msgid "Status"
+msgstr ""
+
+#: ../inc/page-title.php:63
+msgid "Video"
+msgstr ""
+
+#: ../inc/post-nav.php:3
+msgid "Next post"
+msgstr ""
+
+#: ../inc/post-nav.php:4
+msgid "Previous post"
+msgstr ""
+
+#: ../inc/related-posts.php:6
+msgid "You may also like"
+msgstr ""

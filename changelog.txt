@@ -1,0 +1,7 @@
+  Theme : Blogrow
+Version : 1.0.0
+ Author : Alexander "Alx" Agnarson - http://alxmedia.se
+
+December 11 2015 - 1.0.0
+===========================================================
+- Theme released
