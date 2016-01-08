@@ -221,7 +221,7 @@ function custom_theme_options() {
 			'section'	=> 'blog',
 			'choices'	=> array(
 				array( 
-					'value' => '6',
+					'value' => '1',
 					'label' => 'Include featured posts in content area'
 				)
 			)
