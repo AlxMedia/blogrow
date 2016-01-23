@@ -181,6 +181,7 @@ input, textarea, button, select, label { font-family: inherit; }
 .themeform select,
 .themeform textarea, 
 .themeform button { -moz-appearance: none; -webkit-appearance: none; -moz-transition: all .2s ease; -webkit-transition: all .2s ease; transition: all .2s ease; }
+.themeform select { appearance: normal; -moz-appearance: menulist; -webkit-appearance: menulist; }
 .themeform input[type="checkbox"] { -moz-appearance: checkbox; -webkit-appearance: checkbox; }
 .themeform input[type="radio"] { -moz-appearance: radio; -webkit-appearance: radio; }
 .themeform label { font-weight: 600; color: #222; }
