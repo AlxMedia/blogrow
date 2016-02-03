@@ -135,8 +135,6 @@ if ( ! function_exists( 'alx_styles' ) ) {
 		wp_enqueue_style( 'style', get_stylesheet_uri() );
 		if ( ot_get_option('responsive') != 'off' ) { wp_enqueue_style( 'responsive', get_template_directory_uri().'/responsive.css' ); }
 		if ( ot_get_option('custom') == 'on' ) { wp_enqueue_style( 'custom', get_template_directory_uri().'/custom.css' ); }
-		wp_enqueue_style( 'owl-carousel', get_template_directory_uri().'/css/owl.carousel.css' );
-		wp_enqueue_style( 'owl-theme', get_template_directory_uri().'/css/owl.theme.css' );
 		wp_enqueue_style( 'font-awesome', get_template_directory_uri().'/fonts/font-awesome.min.css' );
 	}
 	
