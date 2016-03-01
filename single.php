@@ -24,7 +24,7 @@
 							<?php the_tags('<p class="entry-tags"><span>'.__('Tags:','blogrow').'</span> ','','</p>'); ?>					
 						</div><!--/.entry-->
 						
-						<div class="entry-date updated"><i class="fa fa-clock-o"></i><?php the_time('j M, Y'); ?></div>
+						<div class="entry-date updated"><i class="fa fa-clock-o"></i><?php the_time( get_option( 'date_format' ) ); ?></div>
 						
 					</div><!--/.pad-->
 					
