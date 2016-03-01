@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Blogrow\n"
-"POT-Creation-Date: 2015-05-09 17:26+0100\n"
-"PO-Revision-Date: 2015-05-09 17:26+0100\n"
+"POT-Creation-Date: 2016-03-01 13:37+0100\n"
+"PO-Revision-Date: 2016-03-01 13:37+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: English\n"
@@ -48,15 +48,15 @@ msgstr ""
 msgid "by"
 msgstr ""
 
-#: ../footer.php:60
+#: ../footer.php:64
 msgid "All Rights Reserved."
 msgstr ""
 
-#: ../footer.php:66
+#: ../footer.php:70
 msgid "Powered by"
 msgstr ""
 
-#: ../footer.php:66
+#: ../footer.php:70
 msgid "Theme by"
 msgstr ""
 

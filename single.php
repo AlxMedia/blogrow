@@ -21,7 +21,7 @@
 							<?php the_content(); ?>
 							<?php wp_link_pages(array('before'=>'<div class="entry-pages">'.__('Pages:','blogrow'),'after'=>'</div>')); ?>
 							<div class="clear"></div>	
-							<?php the_tags('<p class="entry-tags"><span>'.__('Tags:','magaziner').'</span> ','','</p>'); ?>					
+							<?php the_tags('<p class="entry-tags"><span>'.__('Tags:','blogrow').'</span> ','','</p>'); ?>					
 						</div><!--/.entry-->
 						
 						<div class="entry-date updated"><i class="fa fa-clock-o"></i><?php the_time('j M, Y'); ?></div>
