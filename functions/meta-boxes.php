@@ -10,30 +10,30 @@ function _custom_meta_boxes() {
 /* ------------------------------------ */
 $page_options = array(
 	'id'          => 'page-options',
-	'title'       => 'Page Options',
+	'title'       => esc_html__( 'Page Options', 'blogrow' ),
 	'desc'        => '',
 	'pages'       => array( 'page' ),
 	'context'     => 'normal',
 	'priority'    => 'high',
 	'fields'      => array(
 		array(
-			'label'		=> 'Heading',
+			'label'		=> esc_html__( 'Heading', 'blogrow' ),
 			'id'		=> '_heading',
 			'type'		=> 'text'
 		),
 		array(
-			'label'		=> 'Subheading',
+			'label'		=> esc_html__( 'Subheading', 'blogrow' ),
 			'id'		=> '_subheading',
 			'type'		=> 'text'
 		),
 		array(
-			'label'		=> 'Primary Sidebar',
+			'label'		=> esc_html__( 'Primary Sidebar', 'blogrow' ),
 			'id'		=> '_sidebar_primary',
 			'type'		=> 'sidebar-select',
 			'desc'		=> ''
 		),
 		array(
-			'label'		=> 'Layout',
+			'label'		=> esc_html__( 'Layout', 'blogrow' ),
 			'id'		=> '_layout',
 			'type'		=> 'radio-image',
 			'desc'		=> '',
@@ -41,22 +41,22 @@ $page_options = array(
 			'choices'	=> array(
 				array(
 					'value'		=> 'inherit',
-					'label'		=> 'Inherit Layout',
+					'label'		=> esc_html__( 'Inherit Layout', 'blogrow' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/layout-off.png'
 				),
 				array(
 					'value'		=> 'col-1c',
-					'label'		=> '1 Column',
+					'label'		=> esc_html__( '1 Column', 'blogrow' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-1c.png'
 				),
 				array(
 					'value'		=> 'col-2cl',
-					'label'		=> '2 Column Left',
+					'label'		=> esc_html__( '2 Column Left', 'blogrow' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-2cl.png'
 				),
 				array(
 					'value'		=> 'col-2cr',
-					'label'		=> '2 Column Right',
+					'label'		=> esc_html__( '2 Column Right', 'blogrow' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-2cr.png'
 				)
 			)
@@ -66,43 +66,43 @@ $page_options = array(
 
 $post_options = array(
 	'id'          => 'post-options',
-	'title'       => 'Post Options',
+	'title'       => esc_html__( 'Post Options', 'blogrow' ),
 	'desc'        => '',
 	'pages'       => array( 'post' ),
 	'context'     => 'normal',
 	'priority'    => 'high',
 	'fields'      => array(
 		array(
-			'label'		=> 'Primary Sidebar',
+			'label'		=> esc_html__( 'Primary Sidebar', 'blogrow' ),
 			'id'		=> '_sidebar_primary',
 			'type'		=> 'sidebar-select',
-			'desc'		=> 'Overrides default'
+			'desc'		=> esc_html__( 'Overrides default', 'blogrow' ),
 		),
 		array(
-			'label'		=> 'Layout',
+			'label'		=> esc_html__( 'Layout', 'blogrow' ),
 			'id'		=> '_layout',
 			'type'		=> 'radio-image',
-			'desc'		=> 'Overrides the default layout option',
+			'desc'		=> esc_html__( 'Overrides the default layout option', 'blogrow' ),
 			'std'		=> 'inherit',
 			'choices'	=> array(
 				array(
 					'value'		=> 'inherit',
-					'label'		=> 'Inherit Layout',
+					'label'		=> esc_html__( 'Inherit Layout', 'blogrow' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/layout-off.png'
 				),
 				array(
 					'value'		=> 'col-1c',
-					'label'		=> '1 Column',
+					'label'		=> esc_html__( '1 Column', 'blogrow' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-1c.png'
 				),
 				array(
 					'value'		=> 'col-2cl',
-					'label'		=> '2 Column Left',
+					'label'		=> esc_html__( '2 Column Left', 'blogrow' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-2cl.png'
 				),
 				array(
 					'value'		=> 'col-2cr',
-					'label'		=> '2 Column Right',
+					'label'		=> esc_html__( '2 Column Right', 'blogrow' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-2cr.png'
 				)
 			)
@@ -112,9 +112,8 @@ $post_options = array(
 
 $post_format_gallery = array(
 	'id'          => 'format-gallery',
-	'title'       => 'Format: Gallery',
-	'desc'        => '<a title="Add Media" data-editor="content" class="button insert-media add_media" id="insert-media-button" href="#">Add Media</a> <br /><br />
-						To create a gallery, upload your images and then select "<strong>Uploaded to this post</strong>" from the dropdown (in the media popup) to see images attached to this post. You can drag to re-order or delete them there. <br /><br /><i>Note: Do not click the "Insert into post" button. Only use the "Insert Media" section of the upload popup, not "Create Gallery" which is for standard post galleries.</i>',
+	'title'       => esc_html__( 'Format: Gallery', 'blogrow' ),
+	'desc'        => esc_html__( 'To create a gallery, upload your images and then select "Uploaded to this post" from the dropdown (in the media popup) to see images attached to this post. You can drag to re-order or delete them there. Note: Do not click the "Insert into post" button. Only use the "Insert Media" section of the upload popup, not "Create Gallery" which is for standard post galleries.', 'blogrow' ),
 	'pages'       => array( 'post' ),
 	'context'     => 'normal',
 	'priority'    => 'high',
@@ -122,14 +121,14 @@ $post_format_gallery = array(
 );
 $post_format_audio = array(
 	'id'          => 'format-audio',
-	'title'       => 'Format: Audio',
-	'desc'        => 'These settings enable you to embed audio into your posts.',
+	'title'       => esc_html__( 'Format: Audio', 'blogrow' ),
+	'desc'        => esc_html__( 'These settings enable you to embed audio into your posts.', 'blogrow' ),
 	'pages'       => array( 'post' ),
 	'context'     => 'normal',
 	'priority'    => 'high',
 	'fields'      => array(
 		array(
-			'label'		=> 'Audio URL',
+			'label'		=> esc_html__( 'Audio URL', 'blogrow' ),
 			'id'		=> '_audio_url',
 			'type'		=> 'text',
 			'desc'		=> ''
@@ -138,14 +137,14 @@ $post_format_audio = array(
 );
 $post_format_video = array(
 	'id'          => 'format-video',
-	'title'       => 'Format: Video',
-	'desc'        => 'These settings enable you to embed videos into your posts.',
+	'title'       => esc_html__( 'Format: Video', 'blogrow' ),
+	'desc'        => esc_html__( 'These settings enable you to embed videos into your posts.', 'blogrow' ),
 	'pages'       => array( 'post' ),
 	'context'     => 'normal',
 	'priority'    => 'high',
 	'fields'      => array(
 		array(
-			'label'		=> 'Video URL',
+			'label'		=> esc_html__( 'Video URL', 'blogrow' ),
 			'id'		=> '_video_url',
 			'type'		=> 'text',
 			'desc'		=> ''

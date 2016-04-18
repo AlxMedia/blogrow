@@ -14,7 +14,7 @@
 	add_filter( 'ot_show_pages', '__return_false' );
 	add_filter( 'ot_show_new_layout', '__return_false' );
 	add_filter( 'ot_theme_mode', '__return_true' );
-	load_template( get_template_directory() . '/option-tree/ot-loader.php' );
+	include( get_template_directory() . '/option-tree/ot-loader.php' );
 
 
 /* ------------------------------------------------------------------------- *
@@ -28,22 +28,22 @@ if ( ! function_exists( 'alx_load' ) ) {
 		load_theme_textdomain( 'blogrow', get_template_directory().'/languages' );
 		
 		// Load theme options and meta boxes
-		load_template( get_template_directory() . '/functions/theme-options.php' );
-		load_template( get_template_directory() . '/functions/meta-boxes.php' );
+		include( get_template_directory() . '/functions/theme-options.php' );
+		include( get_template_directory() . '/functions/meta-boxes.php' );
 		
 		// Load custom widgets
-		load_template( get_template_directory() . '/functions/widgets/alx-tabs.php' );
-		load_template( get_template_directory() . '/functions/widgets/alx-video.php' );
-		load_template( get_template_directory() . '/functions/widgets/alx-posts.php' );
+		include( get_template_directory() . '/functions/widgets/alx-tabs.php' );
+		include( get_template_directory() . '/functions/widgets/alx-video.php' );
+		include( get_template_directory() . '/functions/widgets/alx-posts.php' );
 		
 		// Load custom shortcodes
-		load_template( get_template_directory() . '/functions/shortcodes.php' );
+		include( get_template_directory() . '/functions/shortcodes.php' );
 
 		// Load dynamic styles
-		load_template( get_template_directory() . '/functions/dynamic-styles.php' );
+		include( get_template_directory() . '/functions/dynamic-styles.php' );
 		
 		// Load TGM plugin activation
-		load_template( get_template_directory() . '/functions/class-tgm-plugin-activation.php' );
+		include( get_template_directory() . '/functions/class-tgm-plugin-activation.php' );
 	}
 	
 }
@@ -296,7 +296,7 @@ if ( ! function_exists( 'alx_social_links' ) ) {
 					if ( isset($item['social-link']) && !empty($item['social-link']) ) 
 						{ $link = 'href="' .esc_attr( $item['social-link'] ). '"'; } else $link = '';
 					if ( isset($item['social-target']) && !empty($item['social-target']) ) 
-						{ $target = 'target="' .$item['social-target']. '"'; } else $target = '';
+						{ $target = 'target="_blank"'; } else $target = '';
 					if ( isset($item['social-icon']) && !empty($item['social-icon']) ) 
 						{ $icon = 'class="fa ' .esc_attr( $item['social-icon'] ). '"'; } else $icon = '';
 					if ( isset($item['social-color']) && !empty($item['social-color']) ) 
@@ -535,20 +535,6 @@ if ( ! function_exists( 'alx_feed_link' ) ) {
 	
 }
 add_filter( 'feed_link', 'alx_feed_link', 10, 2 );
-
-
-/*  Custom favicon
-/* ------------------------------------ */
-if ( ! function_exists( 'alx_favicon' ) ) {
-
-	function alx_favicon() {
-		if ( ot_get_option('favicon') ) {
-			echo '<link rel="shortcut icon" href="'.ot_get_option('favicon').'" />'."\n";
-		}
-	}
-	
-}
-add_filter( 'wp_head', 'alx_favicon' );
 
 
 /*  Excerpt ending

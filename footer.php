@@ -27,7 +27,7 @@
 				<?php $i = 0; while ( $i < $total ) { $i++; ?>
 					<?php if ( is_active_sidebar( 'footer-' . $i ) ) { ?>
 		
-				<div class="footer-widget-<?php echo $i; ?> grid <?php echo $class; ?> <?php if ( $i == $total ) { echo 'last'; } ?>">
+				<div class="footer-widget-<?php echo esc_attr( $i ); ?> grid <?php echo esc_attr( $class ); ?> <?php if ( $i == $total ) { echo 'last'; } ?>">
 					<?php dynamic_sidebar( 'footer-' . $i ); ?>
 				</div>
 		
@@ -61,13 +61,13 @@
 							<?php if ( ot_get_option( 'copyright' ) ): ?>
 								<p><?php echo esc_attr( ot_get_option( 'copyright' ) ); ?></p>
 							<?php else: ?>
-								<p><?php bloginfo(); ?> &copy; <?php echo date( 'Y' ); ?>. <?php _e('All Rights Reserved.','blogrow'); ?></p>
+								<p><?php bloginfo(); ?> &copy; <?php echo date( 'Y' ); ?>. <?php esc_html_e('All Rights Reserved.','blogrow'); ?></p>
 							<?php endif; ?>
 						</div><!--/#copyright-->
 						
 						<?php if ( ot_get_option( 'credit' ) != 'off' ): ?>
 						<div id="credit">
-							<p><?php _e('Powered by','blogrow'); ?> <a href="http://wordpress.org" rel="nofollow">WordPress</a>. <?php _e('Theme by','blogrow'); ?> <a href="http://alxmedia.se" rel="nofollow">Alx</a>.</p>
+							<p><?php esc_html_e('Powered by','blogrow'); ?> <a href="http://wordpress.org" rel="nofollow">WordPress</a>. <?php esc_html_e('Theme by','blogrow'); ?> <a href="http://alxmedia.se" rel="nofollow">Alx</a>.</p>
 						</div><!--/#credit-->
 						<?php endif; ?>
 						

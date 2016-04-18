@@ -3,7 +3,7 @@
 <?php if ( $related->have_posts() ): ?>
 
 <div class="pad">
-	<h4 class="heading"><?php _e('You may also like','blogrow'); ?></h4>
+	<h4 class="heading"><?php esc_html_e('You may also like','blogrow'); ?></h4>
 	<ul class="related-posts group">
 		
 		<?php while ( $related->have_posts() ) : $related->the_post(); ?>
