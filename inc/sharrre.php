@@ -1,5 +1,5 @@
 <div class="sharrre-container group">
-	<div id="twitter" data-url="<?php echo the_permalink(); ?>" data-text="<?php echo the_title(); ?>" data-title="Tweet"><a class="box group" href="#"><div class="count" href="#"><i class="fa fa-plus"></i></div><div class="share"><i class="fa fa-twitter"></i></div></a></div>
+	<div id="twitter" data-url="<?php echo the_permalink(); ?>" data-text="<?php echo the_title(); ?>" data-title="Tweet"></div>
 	<div id="facebook" data-url="<?php echo the_permalink(); ?>" data-text="<?php echo the_title(); ?>" data-title="Like"></div>
 	<div id="googleplus" data-url="<?php echo the_permalink(); ?>" data-text="<?php echo the_title(); ?>" data-title="+1"></div>
 	<div id="pinterest" data-url="<?php echo the_permalink(); ?>" data-text="<?php echo the_title(); ?>" data-title="Pin It"></div>
@@ -12,7 +12,7 @@
 			share: {
 				twitter: true
 			},
-			template: '<a class="box group" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-twitter"></i></div></a>',
+			template: '<a class="box group" href="#"><div class="count" href="#"><i class="fa fa-plus"></i></div><div class="share"><i class="fa fa-twitter"></i></div></a>',
 			enableHover: false,
 			enableTracking: true,
 			buttons: { twitter: {via: '<?php echo esc_attr( ot_get_option('twitter-username') ); ?>'}},
@@ -28,6 +28,7 @@
 			template: '<a class="box group" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-facebook-square"></i></div></a>',
 			enableHover: false,
 			enableTracking: true,
+			buttons:{layout: 'box_count'},
 			click: function(api, options){
 				api.simulateClick();
 				api.openPopup('facebook');
@@ -40,6 +41,7 @@
 			template: '<a class="box group" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-google-plus-square"></i></div></a>',
 			enableHover: false,
 			enableTracking: true,
+			buttons:{size: 'tall'},
 			urlCurl: '<?php echo get_template_directory_uri() .'/js/sharrre.php'; ?>',
 			click: function(api, options){
 				api.simulateClick();
