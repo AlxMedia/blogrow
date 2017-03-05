@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="content">
+<div class="content">
 	<div class="pad group">	
 			
 			<?php while ( have_posts() ): the_post(); ?>
@@ -53,7 +53,7 @@
 			<?php endwhile; ?>
 			
 	</div><!--/.pad-->	
-</section><!--/.content-->
+</div><!--/.content-->
 
 <?php get_sidebar(); ?>
 

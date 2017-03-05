@@ -22,7 +22,7 @@
 					   is_active_sidebar( 'footer-3' ) ||
 					   is_active_sidebar( 'footer-4' ) ) && $total > 0 ) 
 		{ ?>		
-		<section id="footer-widgets" class="container">
+		<div id="footer-widgets" class="container">
 			<div class="pad group">
 				<?php $i = 0; while ( $i < $total ) { $i++; ?>
 					<?php if ( is_active_sidebar( 'footer-' . $i ) ) { ?>
@@ -34,7 +34,7 @@
 					<?php } ?>
 				<?php } ?>
 			</div><!--/.pad-->
-		</section><!--/#footer-widgets-->	
+		</div><!--/#footer-widgets-->	
 		<?php } ?>
 		
 		<?php if ( has_nav_menu( 'footer' ) ): ?>
@@ -45,7 +45,7 @@
 			</nav><!--/#nav-footer-->
 		<?php endif; ?>
 		
-		<section id="footer-bottom">
+		<div id="footer-bottom">
 			<div class="container">
 			
 				<a id="back-to-top" href="#"><i class="fa fa-angle-up"></i></a>
@@ -78,7 +78,7 @@
 				</div><!--/.pad-->
 				
 			</div><!--/.container-->
-		</section><!--/#footer-bottom-->
+		</div><!--/#footer-bottom-->
 		
 	</footer><!--/#footer-->
 
