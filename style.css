@@ -576,6 +576,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 /*  header : search
 /* ------------------------------------ */
 .toggle-search { color: #444; font-size: 18px; border-left: 1px dotted #eee; border-right: 1px dotted #eee; line-height: 24px; cursor: pointer; padding: 18px 16px; display: block; position: absolute; right: 40px; top: -60px; }
+.toggle-search.active .fa.fa-search:before { content: "\f00d"; font-size: 22px; }
 .search-expand { display: none; background: #fff; border-left: 1px solid #eee; position: absolute; top: -60px; right: 92px; width: 340px; }
 .search-expand-inner { padding: 11px; border-bottom: 1px solid rgba(255,255,255,0.3);  }
 .search-expand .themeform input { background: #fff; width: 100%; border: 1px solid #eee; border-radius: 0; }
