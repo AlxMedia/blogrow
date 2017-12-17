@@ -1,8 +1,8 @@
 <div class="frontpage-top pad">
 	
-	<?php if ( ot_get_option('front-picture') ): ?>
+	<?php if ( get_theme_mod('front-picture') ): ?>
 	<div class="front-picture">
-		<img src="<?php echo ot_get_option('front-picture'); ?>" alt="" />
+		<img src="<?php echo get_theme_mod('front-picture'); ?>" alt="" />
 	</div>
 	<?php endif; ?>
 	
@@ -13,10 +13,10 @@
 		<div class="clear"></div>
 	<?php endwhile; ?>
 	
-	<?php if ( ot_get_option('front-button-text') && ot_get_option('front-button-link') ): ?>
+	<?php if ( get_theme_mod('front-button-text') && get_theme_mod('front-button-link') ): ?>
 	<div class="front-button">
-		<a href="<?php echo esc_attr( ot_get_option('front-button-link') ); ?>">
-			<span><?php echo esc_attr( ot_get_option('front-button-text') ); ?></span>
+		<a href="<?php echo esc_attr( get_theme_mod('front-button-link') ); ?>">
+			<span><?php echo esc_attr( get_theme_mod('front-button-text') ); ?></span>
 		</a>
 	</div>
 	<?php endif; ?>

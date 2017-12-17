@@ -641,12 +641,12 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 #footer { background: #fff; position: relative; width: 100%; font-weight: 400; }
 #footer-widgets{ padding-top: 20px; }
 
-#footer-bottom { font-size: 15px; font-weight: 300; color: #999; background: #fff; border-top: 1px solid #ddd; }
+#footer-bottom { font-size: 15px; font-weight: 300; color: #999; background: #fff; border-top: 1px solid #eee; }
 #footer-bottom .pad { padding-top: 30px; padding-bottom: 60px!important; }
 #footer-bottom a { color: #222; }
 #footer-bottom a:hover { color: #555; }
 #footer-bottom #footer-logo { display: block; margin-bottom: 20px; max-height: 50px; -webkit-border-radius: 0; border-radius: 0; }
-#footer-bottom #back-to-top { background: #eee; color: #222; position: relative; text-align: center; width: 40px; height: 40px; display: block; margin: 0 auto; margin: 0 auto -30px; border-radius: 0 0 5px 5px; }
+#footer-bottom #back-to-top { background: #eee; z-index: 9; color: #222; position: relative; text-align: center; width: 40px; height: 40px; display: block; margin: 0 auto; margin: 0 auto -30px; border-radius: 0 0 5px 5px; }
 #footer-bottom #back-to-top i { font-size: 38px; position: relative; top: 0; }
 #footer-bottom .social-links { padding-top: 10px; }
 
@@ -777,6 +777,14 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 .sharrre#pinterest .share,
 .sharrre#pinterest .box:hover .count { color: #ca2128; }
 .sharrre#pinterest .box:hover .count { background: #ca2128; }
+
+.sharrre#linkedin .box:hover { background: #f2f8fb; }
+.sharrre#linkedin .box { border-top-color: #0077b5; }
+.sharrre#linkedin .box:hover .count:after { border-left-color: #0077b5; }
+.sharrre#linkedin .count,
+.sharrre#linkedin .share,
+.sharrre#linkedin .box:hover .count { color: #0077b5; }
+.sharrre#linkedin .box:hover .count { background: #0077b5; }
 
 /*  single : post pages
 /* ------------------------------------ */

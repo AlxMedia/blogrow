@@ -13,7 +13,7 @@
 	
 		<?php if ( have_posts() ) : ?>
 			
-			<?php if ( ot_get_option('blog-layout') == 'blog-grid' ) : ?>
+			<?php if ( get_theme_mod('blog-layout','blog-standard') == 'blog-grid' ) : ?>
 			
 				<ul class="entry-grid group">
 					<?php while ( have_posts() ): the_post(); ?>
@@ -21,7 +21,7 @@
 					<?php endwhile; ?>
 				</ul>
 			
-			<?php elseif ( ot_get_option('blog-layout') == 'blog-list' ) : ?>		
+			<?php elseif ( get_theme_mod('blog-layout','blog-standard') == 'blog-list' ) : ?>		
 				
 				<div class="entry-list group">
 				<?php while ( have_posts() ): the_post(); ?>

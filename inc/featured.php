@@ -6,13 +6,13 @@ $featured = new WP_Query(
 		'update_post_meta_cache'	=> false,
 		'update_post_term_cache'	=> false,
 		'ignore_sticky_posts'		=> 1,
-		'posts_per_page'			=> ot_get_option('featured-posts-count'),
-		'cat'						=> ot_get_option('featured-category')
+		'posts_per_page'			=> get_theme_mod('featured-posts-count'),
+		'cat'						=> get_theme_mod('featured-category')
 	)
 );
 ?>
 
-<?php if ( is_home() && !is_paged() && ( ot_get_option('featured-posts-count') !='0') || is_page_template( 'page-templates/frontpage.php' ) ): ?>
+<?php if ( is_home() && !is_paged() && ( get_theme_mod('featured-posts-count','6') !='0') || is_page_template( 'page-templates/frontpage.php' ) ): ?>
 	
 	<div id="owl-featured" class="owl-carousel owl-theme">
 	<?php while ( $featured->have_posts() ): $featured->the_post(); ?>
