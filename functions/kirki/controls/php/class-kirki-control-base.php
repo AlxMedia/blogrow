@@ -86,7 +86,7 @@ class Kirki_Control_Base extends WP_Customize_Control {
 		// Enqueue the script.
 		wp_enqueue_script(
 			'kirki-script',
-			"{$kirki_url}controls/js/dist/script{$suffix}.js",
+			"{$kirki_url}controls/js/script{$suffix}.js",
 			array(
 				'jquery',
 				'customize-base',
@@ -101,12 +101,12 @@ class Kirki_Control_Base extends WP_Customize_Control {
 			'kirki-script',
 			'kirkiL10n',
 			array(
-				'noFileSelected' => esc_attr__( 'No File Selected', 'blogrow' ),
-				'remove'         => esc_attr__( 'Remove', 'blogrow' ),
-				'default'        => esc_attr__( 'Default', 'blogrow' ),
-				'selectFile'     => esc_attr__( 'Select File', 'blogrow' ),
-				'standardFonts'  => esc_attr__( 'Standard Fonts', 'blogrow' ),
-				'googleFonts'    => esc_attr__( 'Google Fonts', 'blogrow' ),
+				'noFileSelected' => esc_attr__( 'No File Selected', 'kirki' ),
+				'remove'         => esc_attr__( 'Remove', 'kirki' ),
+				'default'        => esc_attr__( 'Default', 'kirki' ),
+				'selectFile'     => esc_attr__( 'Select File', 'kirki' ),
+				'standardFonts'  => esc_attr__( 'Standard Fonts', 'kirki' ),
+				'googleFonts'    => esc_attr__( 'Google Fonts', 'kirki' ),
 			)
 		);
 
