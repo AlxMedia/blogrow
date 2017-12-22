@@ -552,7 +552,7 @@ add_filter( 'excerpt_more', 'alx_excerpt_more' );
 if ( ! function_exists( 'alx_excerpt_length' ) ) {
 
 	function alx_excerpt_length( $length ) {
-		return get_theme_mod('excerpt-length',$length);
+		return get_theme_mod('excerpt-length','26',$length);
 	}
 	
 }
