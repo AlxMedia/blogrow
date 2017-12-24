@@ -3,7 +3,7 @@ if ( ! class_exists( 'Kirki' ) ) {
 	return;
 }
 
-/*  Add config
+/*  Add Config
 /* ------------------------------------ */
 Kirki::add_config( 'blogrow', array(
 	'capability'    => 'edit_theme_options',
@@ -79,7 +79,7 @@ Kirki::add_section( 'styling', array(
 /* ------------------------------------ */
 
 // General: Custom CSS
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'custom',
 	'label'			=> esc_attr__( 'Custom Stylesheet', 'blogrow' ),
@@ -88,7 +88,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> 'off',
 ) );
 // General: Responsive Layout
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'responsive',
 	'label'			=> esc_attr__( 'Responsive Layout', 'blogrow' ),
@@ -97,7 +97,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> 'on',
 ) );
 // General: Mobile Sidebar
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'mobile-sidebar-hide',
 	'label'			=> esc_attr__( 'Mobile Sidebar Content', 'blogrow' ),
@@ -106,7 +106,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> 'on',
 ) );
 // General: RSS Feed
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'text',
 	'settings'		=> 'rss-feed',
 	'label'			=> esc_attr__( 'FeedBurner URL', 'blogrow' ),
@@ -115,7 +115,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> '',
 ) );
 // General: Post Comments
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'post-comments',
 	'label'			=> esc_attr__( 'Post Comments', 'blogrow' ),
@@ -124,7 +124,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> 'on',
 ) );
 // General: Page Comments
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'page-comments',
 	'label'			=> esc_attr__( 'Page Comments', 'blogrow' ),
@@ -133,7 +133,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> 'off',
 ) );
 // General: Recommended Plugins
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'recommended-plugins',
 	'label'			=> esc_attr__( 'Recommended Plugins', 'blogrow' ),
@@ -142,7 +142,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> 'on',
 ) );
 // Frontpage: Frontpage Picture
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'image',
 	'settings'		=> 'front-picture',
 	'label'			=> esc_attr__( 'Frontpage Picture', 'blogrow' ),
@@ -151,7 +151,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> '',
 ) );
 // Frontpage: Button Text
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'text',
 	'settings'		=> 'front-button-text',
 	'label'			=> esc_attr__( 'Button Text', 'blogrow' ),
@@ -160,7 +160,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> '',
 ) );
 // Frontpage: Button Link
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'text',
 	'settings'		=> 'front-button-link',
 	'label'			=> esc_attr__( 'Button Link', 'blogrow' ),
@@ -169,7 +169,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> '',
 ) );
 // Blog: Blog Layout
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'radio',
 	'settings'		=> 'blog-layout',
 	'label'			=> esc_attr__( 'Blog Layout', 'blogrow' ),
@@ -183,7 +183,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	),
 ) );
 // Blog: Heading
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'text',
 	'settings'		=> 'blog-heading',
 	'label'			=> esc_attr__( 'Heading', 'blogrow' ),
@@ -192,7 +192,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> '',
 ) );
 // Blog: Subheading
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'text',
 	'settings'		=> 'blog-subheading',
 	'label'			=> esc_attr__( 'Subheading', 'blogrow' ),
@@ -201,7 +201,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> '',
 ) );
 // Blog: Excerpt Length
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'slider',
 	'settings'		=> 'excerpt-length',
 	'label'			=> esc_attr__( 'Excerpt Length', 'blogrow' ),
@@ -215,7 +215,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	),
 ) );
 // Blog: Featured Posts Include
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'checkbox',
 	'settings'		=> 'featured-posts-include',
 	'label'			=> esc_attr__( 'Featured Posts', 'blogrow' ),
@@ -224,7 +224,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> false,
 ) );
 // Blog: Featured Category
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'select',
 	'settings'		=> 'featured-category',
 	'label'			=> esc_attr__( 'Featured Category', 'blogrow' ),
@@ -235,7 +235,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'placeholder'	=> esc_attr__( 'Select a category', 'blogrow' ),
 ) );
 // Blog: Featured Post Count
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'slider',
 	'settings'		=> 'featured-posts-count',
 	'label'			=> esc_attr__( 'Featured Post Count', 'blogrow' ),
@@ -249,7 +249,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	),
 ) );
 // Blog: Single - Sharrre
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'sharrre',
 	'label'			=> esc_attr__( 'Single - Share Bar', 'blogrow' ),
@@ -258,7 +258,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> 'on',
 ) );
 // Blog: Twitter Username
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'text',
 	'settings'		=> 'twitter-username',
 	'label'			=> esc_attr__( 'Single - Share Bar - Twitter Username', 'blogrow' ),
@@ -267,7 +267,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> '',
 ) );
 // Blog: Single - Authorbox
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'author-bio',
 	'label'			=> esc_attr__( 'Single - Author Bio', 'blogrow' ),
@@ -276,7 +276,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> 'on',
 ) );
 // Blog: Single - Post Navigation
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'post-nav',
 	'label'			=> esc_attr__( 'Single - Post Navigation', 'blogrow' ),
@@ -285,7 +285,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> 'on',
 ) );
 // Blog: Single - Related Posts
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'radio',
 	'settings'		=> 'related-posts',
 	'label'			=> esc_attr__( 'Single - Related Posts', 'blogrow' ),
@@ -299,7 +299,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	),
 ) );
 // Header: Custom Logo
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'image',
 	'settings'		=> 'custom-logo',
 	'label'			=> esc_attr__( 'Custom Logo', 'blogrow' ),
@@ -308,7 +308,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> '',
 ) );
 // Header: Site Description
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'site-description',
 	'label'			=> esc_attr__( 'Site Description', 'blogrow' ),
@@ -317,7 +317,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> 'on',
 ) );
 // Footer: Widget Columns
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'radio-image',
 	'settings'		=> 'footer-widgets',
 	'label'			=> esc_attr__( 'Footer Widget Columns', 'blogrow' ),
@@ -333,7 +333,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	),
 ) );
 // Footer: Custom Logo
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'image',
 	'settings'		=> 'footer-logo',
 	'label'			=> esc_attr__( 'Footer Logo', 'blogrow' ),
@@ -342,7 +342,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> '',
 ) );
 // Footer: Copyright
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'text',
 	'settings'		=> 'copyright',
 	'label'			=> esc_attr__( 'Footer Copyright', 'blogrow' ),
@@ -351,7 +351,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> '',
 ) );
 // Footer: Credit
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'credit',
 	'label'			=> esc_attr__( 'Footer Credit', 'blogrow' ),
@@ -360,7 +360,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> 'on',
 ) );
 // Layout: Global
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'radio-image',
 	'settings'		=> 'layout-global',
 	'label'			=> esc_attr__( 'Global Layout', 'blogrow' ),
@@ -374,7 +374,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	),
 ) );
 // Layout: Home
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'radio-image',
 	'settings'		=> 'layout-home',
 	'label'			=> esc_attr__( 'Home', 'blogrow' ),
@@ -389,7 +389,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	),
 ) );
 // Layout: Single
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'radio-image',
 	'settings'		=> 'layout-single',
 	'label'			=> esc_attr__( 'Single', 'blogrow' ),
@@ -404,7 +404,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	),
 ) );
 // Layout: Archive
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'radio-image',
 	'settings'		=> 'layout-archive',
 	'label'			=> esc_attr__( 'Archive', 'blogrow' ),
@@ -419,7 +419,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	),
 ) );
 // Layout : Archive - Category
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'radio-image',
 	'settings'		=> 'layout-archive-category',
 	'label'			=> esc_attr__( 'Archive - Category', 'blogrow' ),
@@ -434,7 +434,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	),
 ) );
 // Layout: Search
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'radio-image',
 	'settings'		=> 'layout-search',
 	'label'			=> esc_attr__( 'Search', 'blogrow' ),
@@ -449,7 +449,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	),
 ) );
 // Layout: Error 404
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'radio-image',
 	'settings'		=> 'layout-404',
 	'label'			=> esc_attr__( 'Error 404', 'blogrow' ),
@@ -464,7 +464,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	),
 ) );
 // Layout: Default Page
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'radio-image',
 	'settings'		=> 'layout-page',
 	'label'			=> esc_attr__( 'Default Page', 'blogrow' ),
@@ -479,7 +479,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	),
 ) );
 // Sidebars: Create Sidebars
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'repeater',
 	'label'			=> esc_attr__( 'Create Sidebars', 'blogrow' ),
 	'description'	=> esc_attr__( 'You must save and refresh the page to see your new sidebars.', 'blogrow' ),
@@ -521,7 +521,7 @@ function alx_kirki_sidebars_select() {
  		return; 
  	}
 	// Sidebars: Select
-	Kirki::add_field( 'alx_blogrow', array(
+	Kirki::add_field( 'alx_theme', array(
 		'type'			=> 'select',
 		'settings'		=> 's1-home',
 		'label'			=> esc_attr__( 'Home', 'blogrow' ),
@@ -531,7 +531,7 @@ function alx_kirki_sidebars_select() {
 		'default'		=> '',
 		'placeholder'	=> esc_attr__( 'Select a sidebar', 'blogrow' ),
 	) );
-	Kirki::add_field( 'alx_blogrow', array(
+	Kirki::add_field( 'alx_theme', array(
 		'type'			=> 'select',
 		'settings'		=> 's1-single',
 		'label'			=> esc_attr__( 'Single', 'blogrow' ),
@@ -541,7 +541,7 @@ function alx_kirki_sidebars_select() {
 		'default'		=> '',
 		'placeholder'	=> esc_attr__( 'Select a sidebar', 'blogrow' ),
 	) );
-	Kirki::add_field( 'alx_blogrow', array(
+	Kirki::add_field( 'alx_theme', array(
 		'type'			=> 'select',
 		'settings'		=> 's1-archive',
 		'label'			=> esc_attr__( 'Archive', 'blogrow' ),
@@ -551,7 +551,7 @@ function alx_kirki_sidebars_select() {
 		'default'		=> '',
 		'placeholder'	=> esc_attr__( 'Select a sidebar', 'blogrow' ),
 	) );
-	Kirki::add_field( 'alx_blogrow', array(
+	Kirki::add_field( 'alx_theme', array(
 		'type'			=> 'select',
 		'settings'		=> 's1-archive-category',
 		'label'			=> esc_attr__( 'Archive - Category', 'blogrow' ),
@@ -561,7 +561,7 @@ function alx_kirki_sidebars_select() {
 		'default'		=> '',
 		'placeholder'	=> esc_attr__( 'Select a sidebar', 'blogrow' ),
 	) );
-	Kirki::add_field( 'alx_blogrow', array(
+	Kirki::add_field( 'alx_theme', array(
 		'type'			=> 'select',
 		'settings'		=> 's1-search',
 		'label'			=> esc_attr__( 'Search', 'blogrow' ),
@@ -571,7 +571,7 @@ function alx_kirki_sidebars_select() {
 		'default'		=> '',
 		'placeholder'	=> esc_attr__( 'Select a sidebar', 'blogrow' ),
 	) );
-	Kirki::add_field( 'alx_blogrow', array(
+	Kirki::add_field( 'alx_theme', array(
 		'type'			=> 'select',
 		'settings'		=> 's1-404',
 		'label'			=> esc_attr__( 'Error 404', 'blogrow' ),
@@ -581,7 +581,7 @@ function alx_kirki_sidebars_select() {
 		'default'		=> '',
 		'placeholder'	=> esc_attr__( 'Select a sidebar', 'blogrow' ),
 	) );
-	Kirki::add_field( 'alx_blogrow', array(
+	Kirki::add_field( 'alx_theme', array(
 		'type'			=> 'select',
 		'settings'		=> 's1-page',
 		'label'			=> esc_attr__( 'Default Page', 'blogrow' ),
@@ -596,7 +596,7 @@ function alx_kirki_sidebars_select() {
 add_action( 'init', 'alx_kirki_sidebars_select', 999 ); 
 
 // Social Links: List
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'repeater',
 	'label'			=> esc_attr__( 'Create Social Links', 'blogrow' ),
 	'description'	=> esc_attr__( 'Create and organize your social links', 'blogrow' ),
@@ -642,7 +642,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	)
 ) );
 // Styling: Enable
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'dynamic-styles',
 	'label'			=> esc_attr__( 'Dynamic Styles', 'blogrow' ),
@@ -651,7 +651,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> 'on',
 ) );
 // Styling: Font
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'select',
 	'settings'		=> 'font',
 	'label'			=> esc_attr__( 'Font', 'blogrow' ),
@@ -686,7 +686,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	),
 ) );
 // Styling: Container Width
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'slider',
 	'settings'		=> 'container-width',
 	'label'			=> esc_attr__( 'Website Max-width', 'blogrow' ),
@@ -700,7 +700,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	),
 ) );
 // Styling: Primary Color
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'color',
 	'settings'		=> 'color-1',
 	'label'			=> esc_attr__( 'Primary Color', 'blogrow' ),
@@ -709,7 +709,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	'default'		=> '#ceac41',
 ) );
 // Styling: Header Logo Max-height
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'slider',
 	'settings'		=> 'logo-max-height',
 	'label'			=> esc_attr__( 'Header Logo Image Max-height', 'blogrow' ),
@@ -723,7 +723,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	),
 ) );
 // Styling: Image Border Radius
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'slider',
 	'settings'		=> 'image-border-radius',
 	'label'			=> esc_attr__( 'Image Border Radius', 'blogrow' ),
@@ -737,7 +737,7 @@ Kirki::add_field( 'alx_blogrow', array(
 	),
 ) );
 // Styling: Body Background
-Kirki::add_field( 'alx_blogrow', array(
+Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'background',
 	'settings'		=> 'body-background',
 	'label'			=> esc_attr__( 'Body Background', 'blogrow' ),
