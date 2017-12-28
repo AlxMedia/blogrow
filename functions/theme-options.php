@@ -221,7 +221,7 @@ Kirki::add_field( 'alx_theme', array(
 	'label'			=> esc_attr__( 'Featured Post Count', 'blogrow' ),
 	'description'	=> esc_attr__( 'Max number of featured posts to display on the homepage. Set it to 0 to disable.', 'blogrow' ),
 	'section'		=> 'blog',
-	'default'		=> '6',
+	'default'		=> '3',
 	'choices'     => array(
 		'min'	=> '0',
 		'max'	=> '12',
