@@ -15,7 +15,10 @@
 <?php endif; ?>
 
 <?php if ( has_post_format( 'gallery' ) ): // Gallery ?>
-	<script type="text/javascript">
+	
+	<div class="post-format">
+		<?php $images = alx_post_images(); if ( !empty($images) ): ?>
+		<script type="text/javascript">
 			// Check if first slider image is loaded, and load flexslider on document ready
 			jQuery(document).ready(function(){
 			 var firstImage = jQuery('#flexslider-<?php echo the_ID(); ?>').find('img').filter(':first'),
@@ -38,9 +41,6 @@
 				}, 20);
 			});
 		</script>
-	<div class="post-format">
-		<?php $images = alx_post_images(); if ( !empty($images) ): ?>
-
 		<div class="flex-container">
 			<div class="flexslider" id="flexslider-<?php the_ID(); ?>">
 				<ul class="slides">
