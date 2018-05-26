@@ -11,9 +11,9 @@
 			<article <?php post_class(); ?>>
 
 				<div class="related-thumbnail">
-					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 						<?php if ( has_post_thumbnail() ): ?>
-							<?php the_post_thumbnail('thumb-medium'); ?>
+							<?php the_post_thumbnail('blogrow-medium'); ?>
 						<?php else: ?>
 							<img src="<?php echo get_template_directory_uri(); ?>/img/thumb-medium.png" alt="<?php the_title(); ?>" />
 						<?php endif; ?>
@@ -26,7 +26,7 @@
 				<div class="related-inner">
 					
 					<h4 class="related-title">
-						<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+						<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 					</h4><!--/.related-title-->
 					
 					<div class="related-date"><?php the_time('j M, Y'); ?></div>

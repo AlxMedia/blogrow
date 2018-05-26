@@ -67,10 +67,10 @@ if ( ! function_exists( 'alx_setup' ) ) {
 		add_theme_support( 'woocommerce' );
 		
 		// Thumbnail sizes
-		add_image_size( 'thumb-small', 200, 200, true );
-		add_image_size( 'thumb-medium', 520, 292, true );
-		add_image_size( 'thumb-large', 740 );
-		add_image_size( 'thumb-featured', 600, 400, true );
+		add_image_size( 'blogrow-small', 200, 200, true );
+		add_image_size( 'blogrow-medium', 520, 292, true );
+		add_image_size( 'blogrow-large', 740 );
+		add_image_size( 'blogrow-featured', 600, 400, true );
 
 		// Custom menu areas
 		register_nav_menus( array(
@@ -115,11 +115,11 @@ add_action( 'widgets_init', 'alx_sidebars' );
 if ( ! function_exists( 'alx_scripts' ) ) {
 	
 	function alx_scripts() {
-		wp_enqueue_script( 'flexslider', get_template_directory_uri() . '/js/jquery.flexslider.min.js', array( 'jquery' ),'', false );
-		wp_enqueue_script( 'fitvids', get_template_directory_uri() . '/js/jquery.fitvids.js', array( 'jquery' ),'', true );
-		wp_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', array( 'jquery' ),'', true );
-		wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ),'', true );
-		if ( is_singular() ) { wp_enqueue_script( 'sharrre', get_template_directory_uri() . '/js/jquery.sharrre.min.js', array( 'jquery' ),'', true ); }
+		wp_enqueue_script( 'blogrow-flexslider', get_template_directory_uri() . '/js/jquery.flexslider.min.js', array( 'jquery' ),'', false );
+		wp_enqueue_script( 'blogrow-fitvids', get_template_directory_uri() . '/js/jquery.fitvids.js', array( 'jquery' ),'', true );
+		wp_enqueue_script( 'blogrow-owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', array( 'jquery' ),'', true );
+		wp_enqueue_script( 'blogrow-scripts', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ),'', true );
+		if ( is_singular() ) { wp_enqueue_script( 'blogrow-sharrre', get_template_directory_uri() . '/js/jquery.sharrre.min.js', array( 'jquery' ),'', true ); }
 		if ( is_singular() && get_option( 'thread_comments' ) )	{ wp_enqueue_script( 'comment-reply' ); }
 	}  
 	
@@ -132,10 +132,10 @@ add_action( 'wp_enqueue_scripts', 'alx_scripts' );
 if ( ! function_exists( 'alx_styles' ) ) {
 	
 	function alx_styles() {
-		wp_enqueue_style( 'style', get_stylesheet_uri() );
-		if ( get_theme_mod('responsive','on') =='on' ) { wp_enqueue_style( 'responsive', get_template_directory_uri().'/responsive.css' ); }
-		if ( get_theme_mod('custom','off') == 'on' ) { wp_enqueue_style( 'custom', get_template_directory_uri().'/custom.css' ); }
-		wp_enqueue_style( 'font-awesome', get_template_directory_uri().'/fonts/font-awesome.min.css' );
+		wp_enqueue_style( 'blogrow-style', get_stylesheet_uri() );
+		if ( get_theme_mod('blogrow-responsive','on') =='on' ) { wp_enqueue_style( 'responsive', get_template_directory_uri().'/responsive.css' ); }
+		if ( get_theme_mod('blogrow-custom','off') == 'on' ) { wp_enqueue_style( 'custom', get_template_directory_uri().'/custom.css' ); }
+		wp_enqueue_style( 'blogrow-font-awesome', get_template_directory_uri().'/fonts/font-awesome.min.css' );
 	}
 	
 }
@@ -294,13 +294,13 @@ if ( ! function_exists( 'alx_social_links' ) ) {
 					if ( isset($item['social-title']) && !empty($item['social-title']) ) 
 						{ $title = 'title="' .esc_attr( $item['social-title'] ). '"'; } else $title = '';
 					if ( isset($item['social-link']) && !empty($item['social-link']) ) 
-						{ $link = 'href="' .esc_attr( $item['social-link'] ). '"'; } else $link = '';
+						{ $link = 'href="' .esc_url( $item['social-link'] ). '"'; } else $link = '';
 					if ( isset($item['social-target']) && !empty($item['social-target']) ) 
 						{ $target = 'target="_blank"'; } else $target = '';
 					if ( isset($item['social-icon']) && !empty($item['social-icon']) ) 
 						{ $icon = 'class="fa ' .esc_attr( $item['social-icon'] ). '"'; } else $icon = '';
 					if ( isset($item['social-color']) && !empty($item['social-color']) ) 
-						{ $color = 'style="color: ' .$item['social-color']. ';"'; } else $color = '';
+						{ $color = 'style="color: ' .esc_attr( $item['social-color'] ). ';"'; } else $color = '';
 					
 					// Put them together
 					if ( isset($item['social-title']) && !empty($item['social-title']) && isset($item['social-icon']) && !empty($item['social-icon']) && ($item['social-icon'] !='fa-') ) {
@@ -323,12 +323,12 @@ if ( ! function_exists( 'alx_site_title' ) ) {
 	
 		// Text or image?
 		if ( get_theme_mod('custom-logo') ) {
-			$logo = '<img src="'.get_theme_mod('custom-logo').'" alt="'.get_bloginfo('name').'">';
+			$logo = '<img src="'.esc_url( get_theme_mod('custom-logo') ).'" alt="'.get_bloginfo('name').'">';
 		} else {
 			$logo = get_bloginfo('name');
 		}
 		
-		$link = '<a href="'.home_url('/').'" rel="home">'.$logo.'</a>';
+		$link = '<a href="'.esc_url( home_url('/') ).'" rel="home">'.$logo.'</a>';
 		
 		if ( is_front_page() || is_home() ) {
 			$sitename = '<h1 class="site-title">'.$link.'</h1>'."\n";
@@ -760,3 +760,47 @@ function alx_admin_panel_css() {
 	</style>';
 }
 add_action('admin_head', 'alx_admin_panel_css');
+
+
+/* ------------------------------------------------------------------------- *
+ *  Frontend scripts
+/* ------------------------------------------------------------------------- */	
+
+/*  Flexslider gallery post format
+/* ------------------------------------ */
+if ( ! function_exists( 'alx_flexslider_gallery' ) ) {
+
+	function alx_flexslider_gallery() {
+
+		if( has_post_format( 'gallery' ) ) {
+
+			$script = '
+			jQuery(document).ready(function(){
+				var firstImage = jQuery("#flexslider-' . get_the_ID() . '").find("img").filter(":first"),
+				   checkforloaded = setInterval(function() {
+					   var image = firstImage.get(0);
+					   if (image.complete || image.readyState == "complete" || image.readyState == 4) {
+						   clearInterval(checkforloaded);
+						   jQuery("#flexslider-' . get_the_ID() . '").flexslider({
+							   animation: "fade",
+							   slideshow: false,
+							   directionNav: true,
+							   controlNav: false,
+							   pauseOnHover: true,
+							   slideshowSpeed: 7000,
+							   animationSpeed: 600,
+							   smoothHeight: true,
+							   touch: false
+						   });
+					   }
+				   }, 20);
+			   });
+			';
+
+			wp_add_inline_script( 'blogrow-scripts', $script );
+			
+		}
+	}
+	
+}
+add_action( 'wp_enqueue_scripts', 'alx_flexslider_gallery' );

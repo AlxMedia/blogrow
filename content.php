@@ -9,7 +9,7 @@
 		<header class="entry-header">
 			<div class="entry-category"><?php the_category(' / '); ?></div>
 			<h2 class="entry-title">
-				<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+				<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 			</h2><!--/.entry-title-->
 		</header>
 			

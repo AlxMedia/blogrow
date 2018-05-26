@@ -54,9 +54,9 @@ class AlxPosts extends WP_Widget {
 			
 			<?php if($instance['posts_thumb']) { // Thumbnails enabled? ?>
 			<div class="post-item-thumbnail">
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 					<?php if ( has_post_thumbnail() ): ?>
-						<?php the_post_thumbnail('thumb-medium'); ?>
+						<?php the_post_thumbnail('blogrow-medium'); ?>
 					<?php else: ?>
 						<img src="<?php echo get_template_directory_uri(); ?>/img/thumb-medium.png" alt="<?php the_title(); ?>" />
 					<?php endif; ?>
@@ -69,7 +69,7 @@ class AlxPosts extends WP_Widget {
 			
 			<div class="post-item-inner group">
 				<?php if($instance['posts_category']) { ?><p class="post-item-category"><?php the_category(' / '); ?></p><?php } ?>
-				<p class="post-item-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></p>
+				<p class="post-item-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
 				<?php if($instance['posts_date']) { ?><p class="post-item-date"><?php the_time('M j, Y'); ?></p><?php } ?>
 			</div>
 			

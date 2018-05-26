@@ -601,7 +601,7 @@ Kirki::add_field( 'alx_theme', array(
 	'label'			=> esc_attr__( 'Create Social Links', 'blogrow' ),
 	'description'	=> esc_attr__( 'Create and organize your social links', 'blogrow' ),
 	'section'		=> 'social',
-	'tooltip'		=> esc_attr__( 'Font Awesome names:', 'blogrow' ) . ' <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank"><strong>' . esc_attr__( 'View All', 'blogrow' ) . ' </strong></a>',
+	'tooltip'		=> esc_attr__( 'Font Awesome names:', 'blogrow' ) . ' <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank"><strong>' . esc_attr__( 'View All', 'blogrow' ) . ' </strong></a>',
 	'row_label'		=> array(
 		'type'	=> 'text',
 		'value'	=> esc_attr__('social link', 'blogrow' ),
@@ -618,7 +618,7 @@ Kirki::add_field( 'alx_theme', array(
 		'social-icon'	=> array(
 			'type'			=> 'text',
 			'label'			=> esc_attr__( 'Icon Name', 'blogrow' ),
-			'description'	=> esc_attr__( 'Font Awesome icons. Ex: fa-facebook ', 'blogrow' ) . ' <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank"><strong>' . esc_attr__( 'View All', 'blogrow' ) . ' </strong></a>',
+			'description'	=> esc_attr__( 'Font Awesome icons. Ex: fa-facebook ', 'blogrow' ) . ' <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank"><strong>' . esc_attr__( 'View All', 'blogrow' ) . ' </strong></a>',
 			'default'		=> 'fa-',
 		),
 		'social-link'	=> array(
