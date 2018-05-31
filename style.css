@@ -735,6 +735,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 /*  single : sharrre
 /* ------------------------------------ */
 .post-sharrre { margin-top: 30px; }
+.sharrre-container > span { display: none; }
 .sharrre { width: 25%; float: left; }
 .sharrre .box { display: block; padding: 15px 20px; border-top: 2px solid #222; }
 .sharrre .count { width: 50%; background: #eee; color: #fff; display: block; font-size: 15px; font-weight: 900; line-height: 30px; position: relative; text-align: center; border-radius: 6px; }

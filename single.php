@@ -28,7 +28,7 @@
 						
 					</div><!--/.pad-->
 					
-					<?php if ( get_theme_mod( 'sharrre', 'on' ) == 'on' ) { get_template_part('inc/sharrre'); } ?>
+					<?php do_action( 'alx_ext_sharrre' ); ?>
 					
 					<?php if ( ( get_theme_mod( 'author-bio', 'on' ) == 'on' ) && get_the_author_meta( 'description' ) ): ?>
 						<div class="author-bio pad">

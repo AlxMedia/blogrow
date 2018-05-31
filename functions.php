@@ -24,7 +24,6 @@ if ( ! function_exists( 'alx_load' ) ) {
 		
 		// Load custom widgets
 		include( get_template_directory() . '/functions/widgets/alx-tabs.php' );
-		include( get_template_directory() . '/functions/widgets/alx-video.php' );
 		include( get_template_directory() . '/functions/widgets/alx-posts.php' );
 
 		// Load dynamic styles
@@ -692,9 +691,16 @@ if ( ! function_exists( 'alx_plugins' ) ) {
 			// Add the following plugins
 			$plugins = array(
 				array(
+					'name' 				=> 'Alx Extensions',
+					'slug' 				=> 'alx-extensions',
+					'required'			=> false,
+					'force_activation' 	=> false,
+					'force_deactivation'=> false,
+				),
+				array(
 					'name' 				=> 'Meta Box',
 					'slug' 				=> 'meta-box',
-					'required'			=> true,
+					'required'			=> false,
 					'force_activation' 	=> false,
 					'force_deactivation'=> false,
 				),
@@ -715,13 +721,6 @@ if ( ! function_exists( 'alx_plugins' ) ) {
 				array(
 					'name' 				=> 'Responsive Lightbox',
 					'slug' 				=> 'responsive-lightbox',
-					'required'			=> false,
-					'force_activation' 	=> false,
-					'force_deactivation'=> false,
-				),
-				array(
-					'name' 				=> 'Contact Form 7',
-					'slug' 				=> 'contact-form-7',
 					'required'			=> false,
 					'force_activation' 	=> false,
 					'force_deactivation'=> false,
