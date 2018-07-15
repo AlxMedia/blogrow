@@ -73,6 +73,7 @@ if ( ! function_exists( 'alx_setup' ) ) {
 
 		// Custom menu areas
 		register_nav_menus( array(
+			'mobile' => 'Mobile',
 			'topbar' => 'Topbar',
 		) );
 	}
@@ -508,7 +509,8 @@ if ( ! function_exists( 'alx_body_class' ) ) {
 		$classes[] = alx_layout_class();
 		if ( get_theme_mod( 'boxed','off' ) != 'on' ) { $classes[] = 'full-width'; }
 		if ( get_theme_mod( 'boxed','off' ) == 'on' ) { $classes[] = 'boxed'; }
-		if ( has_nav_menu('topbar') ) {	$classes[] = 'topbar-enabled'; }
+		if ( has_nav_menu( 'topbar' ) ) { $classes[] = 'topbar-enabled'; }
+		if ( has_nav_menu( 'mobile' ) ) { $classes[] = 'mobile-menu'; }
 		if ( get_theme_mod( 'mobile-sidebar-hide','on' ) != 'on' ) { $classes[] = 'mobile-sidebar-hide'; }
 		return $classes;
 	}

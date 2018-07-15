@@ -16,12 +16,13 @@
 
 	<header id="header" class="group">
 		
-		<?php if ( has_nav_menu('topbar') ): ?>
-			<nav class="nav-container group" id="nav-topbar">
+		<?php if ( has_nav_menu('mobile') ): ?>
+			<nav class="nav-container group" id="nav-mobile">
 				<div class="nav-toggle"><i class="fa fa-bars"></i></div>
 				<div class="nav-text"><!-- put your mobile menu text here --></div>
-				<div class="nav-wrap container"><?php wp_nav_menu(array('theme_location'=>'topbar','menu_class'=>'nav container-inner group','container'=>'','menu_id' => '','fallback_cb'=> false)); ?></div>
+				<div class="nav-wrap container"><?php wp_nav_menu(array('theme_location'=>'mobile','menu_class'=>'nav container-inner group','container'=>'','menu_id' => '','fallback_cb'=> false)); ?></div>
 				
+				<?php if ( get_theme_mod( 'header-search', 'on' ) == 'on' ): ?>
 				<div class="container">
 					<div class="container-inner">		
 						<div class="toggle-search"><i class="fa fa-search"></i></div>
@@ -32,6 +33,29 @@
 						</div>
 					</div><!--/.container-inner-->
 				</div><!--/.container-->
+				<?php endif; ?>
+				
+			</nav><!--/#nav-mobile-->
+		<?php endif; ?>
+		
+		<?php if ( has_nav_menu('topbar') ): ?>
+			<nav class="nav-container group" id="nav-topbar">
+				<div class="nav-toggle"><i class="fa fa-bars"></i></div>
+				<div class="nav-text"><!-- put your mobile menu text here --></div>
+				<div class="nav-wrap container"><?php wp_nav_menu(array('theme_location'=>'topbar','menu_class'=>'nav container-inner group','container'=>'','menu_id' => '','fallback_cb'=> false)); ?></div>
+				
+				<?php if ( get_theme_mod( 'header-search', 'on' ) == 'on' ): ?>
+				<div class="container">
+					<div class="container-inner">		
+						<div class="toggle-search"><i class="fa fa-search"></i></div>
+						<div class="search-expand">
+							<div class="search-expand-inner">
+								<?php get_search_form(); ?>
+							</div>
+						</div>
+					</div><!--/.container-inner-->
+				</div><!--/.container-->
+				<?php endif; ?>
 				
 			</nav><!--/#nav-topbar-->
 		<?php endif; ?>
@@ -41,7 +65,9 @@
 				<div class="pad group">
 					<?php echo alx_site_title(); ?>
 					<?php if ( get_theme_mod( 'site-description', 'on' ) == 'on' ): ?><p class="site-description"><?php bloginfo( 'description' ); ?></p><?php endif; ?>
-					<?php alx_social_links() ; ?>
+					<?php if ( get_theme_mod( 'header-social', 'on' ) == 'on' ): ?>
+						<?php alx_social_links() ; ?>
+					<?php endif; ?>
 				</div>
 			</div><!--/.container-inner-->
 			

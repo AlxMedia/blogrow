@@ -1,7 +1,7 @@
 /*
 Theme Name: Blogrow
 Theme URI: http://alxmedia.se/themes/blogrow/
-Version: 1.0.1
+Version: 1.0.2
 Description: <a href="http://alxmedia.se/themes/blogrow/">Blogrow</a> is a responsive 100% high resolution theme for personal blogs. The feature list is long: Unlimited accent colors, unlimited widget areas, 0-1 sidebars to the left or right that can be uniquely specified for each page or post, 300px fixed width sidebar, 0-4 footer widget columns, almost zero layout images, related posts and post nav, post formats, good SEO, 3 flexible custom widgets, localisation support, social links, logo upload and many more useful admin panel features.
 Author: Alexander Agnarson
 Author URI: http://alxmedia.se
@@ -581,6 +581,59 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 .search-expand-inner { padding: 11px; border-bottom: 1px solid rgba(255,255,255,0.3);  }
 .search-expand .themeform input { background: #fff; width: 100%; border: 1px solid #eee; border-radius: 0; }
 .search-expand .themeform input:focus { border-color: #ddd; }
+
+/*  header : nav mobile
+/* ------------------------------------ */
+#nav-mobile.nav-container { background: #fff; border-bottom: 1px solid #ddd; box-shadow: 0 3px 0 rgba(0,0,0,0.03);  }
+#nav-mobile .nav-toggle { background: transparent; color: #000; }
+#nav-mobile .nav-text { color: #555; }
+
+@media only screen and (min-width: 720px) {
+
+	/* common */
+	#nav-mobile .nav-wrap {  }
+	#nav-mobile .nav { font-weight: 400; text-transform: uppercase; }
+	#nav-mobile .nav li a { font-size: 14px; color: #666; }	
+	/* level 1 */
+	#nav-mobile .nav > li { border-left: 1px dotted #eee; border-right: none; }
+	#nav-mobile .nav > li:first-child { margin-left: 40px; }
+	#nav-mobile .nav > li > a { padding: 20px 16px; }
+	#nav-mobile .nav > li > a:hover, 
+	#nav-mobile .nav > li:hover > a { background: #f2f2f2; }
+	#nav-mobile .nav li > a:hover, 
+	#nav-mobile .nav li:hover > a, 
+	#nav-mobile .nav li.current_page_item > a, 
+	#nav-mobile .nav li.current-menu-item > a,
+	#nav-mobile .nav li.current-menu-ancestor > a,
+	#nav-mobile .nav li.current-post-parent > a { color: #000; }
+	/* level 2 & 3 */
+	#nav-mobile .nav > li > ul { top: 60px; }
+	#nav-mobile .nav ul { background: #f2f2f2; }
+	#nav-mobile .nav ul li { border-bottom: 1px solid #eee; }
+	#nav-mobile .nav ul li:last-child { border-bottom: none; }
+	#nav-mobile .nav ul li a { font-size: 12px; border: none; }
+}
+@media only screen and (max-width: 719px) {
+	
+	/* common */
+	#nav-mobile .nav-wrap { background: #fff; }
+	#nav-mobile .nav { padding: 20px 0; }
+	#nav-mobile .nav li a { color: #444; border-bottom: 1px dotted #eee; }	
+	/* level 1 */
+	#nav-mobile .nav li > a:hover,
+	#nav-mobile .nav li.current_page_item > a, 
+	#nav-mobile .nav li.current-menu-item > a,
+	#nav-mobile .nav li.current-post-parent > a { background: #f2f2f2; color: #000; }
+	
+}
+
+/* hide and display */
+@media only screen and (min-width: 720px) {
+	.mobile-menu #nav-mobile { display: none; }
+}
+@media only screen and (max-width: 719px) {
+	.mobile-menu #nav-topbar { display: none; } 
+}
 
 /*  header : nav topbar
 /* ------------------------------------ */
