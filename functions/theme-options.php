@@ -282,24 +282,6 @@ Kirki::add_field( 'blogrow_theme', array(
 	'section'		=> 'header',
 	'default'		=> 'on',
 ) );
-// Header: Custom Logo
-Kirki::add_field( 'blogrow_theme', array(
-	'type'			=> 'image',
-	'settings'		=> 'custom-logo',
-	'label'			=> esc_attr__( 'Custom Logo', 'blogrow' ),
-	'description'	=> esc_attr__( 'Upload your custom logo image, 120px height recommended', 'blogrow' ),
-	'section'		=> 'header',
-	'default'		=> '',
-) );
-// Header: Site Description
-Kirki::add_field( 'blogrow_theme', array(
-	'type'			=> 'switch',
-	'settings'		=> 'site-description',
-	'label'			=> esc_attr__( 'Site Description', 'blogrow' ),
-	'description'	=> esc_attr__( 'The description that appears next to your logo', 'blogrow' ),
-	'section'		=> 'header',
-	'default'		=> 'on',
-) );
 // Footer: Widget Columns
 Kirki::add_field( 'blogrow_theme', array(
 	'type'			=> 'radio-image',
@@ -727,21 +709,5 @@ Kirki::add_field( 'blogrow_theme', array(
 		'min'	=> '0',
 		'max'	=> '15',
 		'step'	=> '1',
-	),
-) );
-// Styling: Body Background
-Kirki::add_field( 'blogrow_theme', array(
-	'type'			=> 'background',
-	'settings'		=> 'body-background',
-	'label'			=> esc_attr__( 'Body Background', 'blogrow' ),
-	'description'	=> esc_attr__( 'Set background color and/or upload your own background image', 'blogrow' ),
-	'section'		=> 'styling',
-	'default'     => array(
-		'background-color'      => '',
-		'background-image'      => '',
-		'background-repeat'     => 'no-repeat',
-		'background-position'   => 'center center',
-		'background-size'       => 'cover',
-		'background-attachment' => 'fixed',
 	),
 ) );

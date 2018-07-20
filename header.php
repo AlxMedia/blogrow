@@ -23,16 +23,16 @@
 				<div class="nav-wrap container"><?php wp_nav_menu(array('theme_location'=>'mobile','menu_class'=>'nav container-inner group','container'=>'','menu_id' => '','fallback_cb'=> false)); ?></div>
 				
 				<?php if ( get_theme_mod( 'header-search', 'on' ) == 'on' ): ?>
-				<div class="container">
-					<div class="container-inner">		
-						<div class="toggle-search"><i class="fa fa-search"></i></div>
-						<div class="search-expand">
-							<div class="search-expand-inner">
-								<?php get_search_form(); ?>
+					<div class="container">
+						<div class="container-inner">		
+							<div class="toggle-search"><i class="fa fa-search"></i></div>
+							<div class="search-expand">
+								<div class="search-expand-inner">
+									<?php get_search_form(); ?>
+								</div>
 							</div>
-						</div>
-					</div><!--/.container-inner-->
-				</div><!--/.container-->
+						</div><!--/.container-inner-->
+					</div><!--/.container-->
 				<?php endif; ?>
 				
 			</nav><!--/#nav-mobile-->
@@ -45,16 +45,16 @@
 				<div class="nav-wrap container"><?php wp_nav_menu(array('theme_location'=>'topbar','menu_class'=>'nav container-inner group','container'=>'','menu_id' => '','fallback_cb'=> false)); ?></div>
 				
 				<?php if ( get_theme_mod( 'header-search', 'on' ) == 'on' ): ?>
-				<div class="container">
-					<div class="container-inner">		
-						<div class="toggle-search"><i class="fa fa-search"></i></div>
-						<div class="search-expand">
-							<div class="search-expand-inner">
-								<?php get_search_form(); ?>
+					<div class="container">
+						<div class="container-inner">		
+							<div class="toggle-search"><i class="fa fa-search"></i></div>
+							<div class="search-expand">
+								<div class="search-expand-inner">
+									<?php get_search_form(); ?>
+								</div>
 							</div>
-						</div>
-					</div><!--/.container-inner-->
-				</div><!--/.container-->
+						</div><!--/.container-inner-->
+					</div><!--/.container-->
 				<?php endif; ?>
 				
 			</nav><!--/#nav-topbar-->
@@ -64,7 +64,9 @@
 			<div class="container-inner">
 				<div class="pad group">
 					<?php echo blogrow_site_title(); ?>
-					<?php if ( get_theme_mod( 'site-description', 'on' ) == 'on' ): ?><p class="site-description"><?php bloginfo( 'description' ); ?></p><?php endif; ?>
+					<?php if ( display_header_text() == true ): ?>
+						<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+					<?php endif; ?>
 					<?php if ( get_theme_mod( 'header-social', 'on' ) == 'on' ): ?>
 						<?php blogrow_social_links() ; ?>
 					<?php endif; ?>
