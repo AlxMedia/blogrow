@@ -1,22 +1,52 @@
 <?php
 /*
-	AlxTabs Widget
+	BlogrowTabs Widget
 	
 	License: GNU General Public License v3.0
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
 	
 	Copyright: (c) 2013 Alexander "Alx" Agnarson - http://alxmedia.se
 	
-		@package AlxTabs
+		@package BlogrowTabs
 		@version 1.0
 */
 
-class AlxTabs extends WP_Widget {
+class BlogrowTabs extends WP_Widget {
 
 /*  Constructor
 /* ------------------------------------ */
 	function __construct() {
-		parent::__construct( false, 'AlxTabs', array('description' => 'List posts, comments, and/or tags with or without tabs.', 'classname' => 'widget_blogrow_tabs') );;	
+		parent::__construct( false, 'Alx Tabs', array('description' => 'List posts, comments, and/or tags with or without tabs.', 'classname' => 'widget_blogrow_tabs') );;	
+	}
+	
+	public function blogrow_get_defaults() {
+		return array(
+			'title'				=> '',
+			'tabs_category'		=> 1,
+			'tabs_date'			=> 1,
+		// Recent posts
+			'recent_enable'		=> 1,
+			'recent_thumbs'		=> 1,
+			'recent_cat_id'		=> '0',
+			'recent_num'		=> '5',
+		// Popular posts
+			'popular_enable'	=> 1,
+			'popular_thumbs'	=> 1,
+			'popular_cat_id'	=> '0',
+			'popular_time'		=> '0',
+			'popular_num'		=> '5',
+		// Recent comments
+			'comments_enable'	=> 1,
+			'comments_avatars'	=> 1,
+			'comments_num'		=> '5',
+		// Tags
+			'tags_enable'		=> 1,
+		// Order
+			'order_recent'		=> '1',
+			'order_popular'		=> '2',
+			'order_comments'	=> '3',
+			'order_tags'		=> '4',
+		);
 	}
 
 /*  Create tabs-nav
@@ -47,7 +77,11 @@ class AlxTabs extends WP_Widget {
 /* ------------------------------------ */
 	public function widget($args, $instance) {
 		extract( $args );
-		$instance['title']?NULL:$instance['title']='';
+		
+		$defaults = $this -> blogrow_get_defaults();
+
+		$instance = wp_parse_args( (array) $instance, $defaults );
+
 		$title = apply_filters('widget_title',$instance['title']);
 		$output = $before_widget."\n";
 		if($title)
@@ -410,7 +444,7 @@ class AlxTabs extends WP_Widget {
 if ( ! function_exists( 'blogrow_register_widget_tabs' ) ) {
 
 	function blogrow_register_widget_tabs() { 
-		register_widget( 'AlxTabs' );
+		register_widget( 'BlogrowTabs' );
 	}
 	
 }

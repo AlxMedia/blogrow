@@ -1,29 +1,47 @@
 <?php
 /*
-	AlxPosts Widget
+	BlogrowPosts Widget
 	
 	License: GNU General Public License v3.0
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
 	
 	Copyright: (c) 2013 Alexander "Alx" Agnarson - http://alxmedia.se
 	
-		@package AlxPosts
+		@package BlogrowPosts
 		@version 1.0
 */
 
-class AlxPosts extends WP_Widget {
+class BlogrowPosts extends WP_Widget {
 
 /*  Constructor
 /* ------------------------------------ */
 	function __construct() {
-		parent::__construct( false, 'AlxPosts', array('description' => 'Display posts from a category', 'classname' => 'widget_blogrow_posts') );;	
+		parent::__construct( false, 'Alx Posts', array('description' => 'Display posts from a category', 'classname' => 'widget_blogrow_posts') );;	
+	}
+	
+	public function blogrow_get_defaults() {
+		return array(
+			'title'			=> '',
+			// Posts
+			'posts_thumb'	=> 1,
+			'posts_category'=> 1,
+			'posts_date'	=> 1,
+			'posts_num'		=> '4',
+			'posts_cat_id'	=> '0',
+			'posts_orderby'	=> 'date',
+			'posts_time'	=> '0',
+		);
 	}
 	
 /*  Widget
 /* ------------------------------------ */
 	public function widget($args, $instance) {
 		extract( $args );
-		$instance['title']?NULL:$instance['title']='';
+		
+		$defaults = $this -> blogrow_get_defaults();
+
+		$instance = wp_parse_args( (array) $instance, $defaults );
+
 		$title = apply_filters('widget_title',$instance['title']);
 		$output = $before_widget."\n";
 		if($title)
@@ -190,7 +208,7 @@ class AlxPosts extends WP_Widget {
 if ( ! function_exists( 'blogrow_register_widget_posts' ) ) {
 
 	function blogrow_register_widget_posts() { 
-		register_widget( 'AlxPosts' );
+		register_widget( 'BlogrowPosts' );
 	}
 	
 }
