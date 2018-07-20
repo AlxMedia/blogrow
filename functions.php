@@ -109,7 +109,7 @@ if ( ! function_exists( 'blogrow_custom_header' ) ) {
 		$args = array(
 			'default-image'	=> false,
 			'default-text'	=> false,
-			'width'			=> 1460,
+			'width'			=> 1160,
 			'height'		=> 300,
 			'flex-width'	=> true,
 			'flex-height'	=> true,

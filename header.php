@@ -62,15 +62,26 @@
 		
 		<div class="container group">
 			<div class="container-inner">
-				<div class="pad group">
-					<?php echo blogrow_site_title(); ?>
-					<?php if ( display_header_text() == true ): ?>
-						<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-					<?php endif; ?>
-					<?php if ( get_theme_mod( 'header-social', 'on' ) == 'on' ): ?>
-						<?php blogrow_social_links() ; ?>
-					<?php endif; ?>
-				</div>
+				<?php if ( get_header_image() == '' ) : ?>
+					<div class="pad group">
+						<?php echo blogrow_site_title(); ?>
+						<?php if ( display_header_text() == true ): ?>
+							<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+						<?php endif; ?>
+						<?php if ( get_theme_mod( 'header-social', 'on' ) == 'on' ): ?>
+							<?php blogrow_social_links() ; ?>
+						<?php endif; ?>
+					</div>
+				<?php endif; ?>
+				
+				<?php if ( get_header_image() ) : ?>
+					<div class="site-header">
+						<a href="<?php echo esc_url( home_url('/') ); ?>" rel="home">
+							<img class="site-image" src="<?php header_image(); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+						</a>
+					</div>
+				<?php endif; ?>
+				
 			</div><!--/.container-inner-->
 			
 			<?php if ( is_page_template( 'page-templates/frontpage.php' ) ) { get_template_part('inc/frontpage-top'); } ?>

@@ -527,6 +527,8 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 .site-title a { display: block; color: #000; max-width: 100%; }
 .site-title a img { display: block; max-width: 100%; max-height: 60px; height: auto; padding: 0; margin: 0 auto; -webkit-border-radius: 0; border-radius: 0; }
 .site-description { text-align: center; font-size: 16px; font-style: italic; color: #999; line-height: 30px; position: relative; z-index: 2; }
+.site-header { margin-top: 30px; }
+.site-image { display: block; margin: 0 auto; max-height: 400px; }
 
 #header .social-links { float: none; text-align: center; margin-top: 20px; }
 #header .social-links li { margin: 0 4px; }
