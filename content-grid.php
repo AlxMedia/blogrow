@@ -20,7 +20,7 @@
 			<?php the_excerpt(); ?>
 		</div><!--/.entry-->
 		
-		<div class="entry-date updated"><i class="fa fa-clock-o"></i><?php the_time('j M, Y'); ?></div>
+		<div class="entry-date updated"><i class="fa fa-clock-o"></i><?php the_time( get_option('date_format') ); ?></div>
 		
 	</article><!--/.entry-->
 </li>

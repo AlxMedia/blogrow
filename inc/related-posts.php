@@ -29,7 +29,7 @@
 						<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 					</h4><!--/.related-title-->
 					
-					<div class="related-date"><?php the_time('j M, Y'); ?></div>
+					<div class="related-date"><?php the_time( get_option('date_format') ); ?></div>
 				
 				</div><!--/.related-inner-->
 
