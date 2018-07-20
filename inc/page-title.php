@@ -1,12 +1,12 @@
 <div class="page-title">
 
 	<?php if ( is_home() ) : ?>
-		<h2><?php echo alx_blog_title(); ?></h2>
+		<h2><?php echo blogrow_blog_title(); ?></h2>
 		
 	<?php elseif ( is_single() ): ?>
 				
 	<?php elseif ( is_page() ): ?>
-		<h2><?php echo alx_page_title(); ?></h2>
+		<h2><?php echo blogrow_page_title(); ?></h2>
 
 	<?php elseif ( is_search() ): ?>
 		<h1>

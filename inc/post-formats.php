@@ -17,7 +17,7 @@
 <?php if ( has_post_format( 'gallery' ) ): // Gallery ?>
 	
 	<div class="post-format">
-		<?php $images = alx_post_images(); if ( !empty($images) ): ?>
+		<?php $images = blogrow_post_images(); if ( !empty($images) ): ?>
 		<script type="text/javascript">
 			// Check if first slider image is loaded, and load flexslider on document ready
 			jQuery(document).ready(function(){

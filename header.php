@@ -63,10 +63,10 @@
 		<div class="container group">
 			<div class="container-inner">
 				<div class="pad group">
-					<?php echo alx_site_title(); ?>
+					<?php echo blogrow_site_title(); ?>
 					<?php if ( get_theme_mod( 'site-description', 'on' ) == 'on' ): ?><p class="site-description"><?php bloginfo( 'description' ); ?></p><?php endif; ?>
 					<?php if ( get_theme_mod( 'header-social', 'on' ) == 'on' ): ?>
-						<?php alx_social_links() ; ?>
+						<?php blogrow_social_links() ; ?>
 					<?php endif; ?>
 				</div>
 			</div><!--/.container-inner-->
