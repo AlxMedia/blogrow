@@ -68,15 +68,6 @@ Kirki::add_section( 'styling', array(
 /*  Add Fields
 /* ------------------------------------ */
 
-// General: Custom CSS
-Kirki::add_field( 'blogrow_theme', array(
-	'type'			=> 'switch',
-	'settings'		=> 'custom',
-	'label'			=> esc_attr__( 'Custom Stylesheet', 'blogrow' ),
-	'description'	=> esc_attr__( 'Load custom stylesheet (custom.css)', 'blogrow' ),
-	'section'		=> 'general',
-	'default'		=> 'off',
-) );
 // General: Responsive Layout
 Kirki::add_field( 'blogrow_theme', array(
 	'type'			=> 'switch',
