@@ -47,7 +47,7 @@
 				</div><!--/.boxed-->
 				
 				<div class="boxed pad">
-					<?php if ( get_theme_mod( 'post-comments', 'on' ) == 'on' ) { comments_template('/comments.php',true); } ?>
+					<?php if ( comments_open() || get_comments_number() ) :	comments_template( '/comments.php', true ); endif; ?>
 				</div><!--/.pad-->
 				
 			<?php endwhile; ?>
