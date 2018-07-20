@@ -15,7 +15,6 @@ Kirki::add_config( 'blogrow', array(
 Kirki::add_panel( 'options', array(
     'priority'    => 10,
     'title'       => esc_attr__( 'Theme Options', 'blogrow' ),
-    'description' => esc_attr__( '', 'blogrow' ),
 ) );
 
 /*  Add Sections
@@ -23,55 +22,46 @@ Kirki::add_panel( 'options', array(
 Kirki::add_section( 'general', array(
     'priority'    => 10,
     'title'       => esc_attr__( 'General', 'blogrow' ),
-    'description' => esc_attr__( '', 'blogrow' ),
 	'panel'       => 'options',
 ) );
 Kirki::add_section( 'frontpage', array(
     'priority'    => 11,
     'title'       => esc_attr__( 'Frontpage', 'blogrow' ),
-    'description' => esc_attr__( '', 'blogrow' ),
 	'panel'       => 'options',
 ) );
 Kirki::add_section( 'blog', array(
     'priority'    => 20,
     'title'       => esc_attr__( 'Blog', 'blogrow' ),
-    'description' => esc_attr__( '', 'blogrow' ),
 	'panel'       => 'options',
 ) );
 Kirki::add_section( 'header', array(
     'priority'    => 30,
     'title'       => esc_attr__( 'Header', 'blogrow' ),
-    'description' => esc_attr__( '', 'blogrow' ),
 	'panel'       => 'options',
 ) );
 Kirki::add_section( 'footer', array(
     'priority'    => 40,
     'title'       => esc_attr__( 'Footer', 'blogrow' ),
-    'description' => esc_attr__( '', 'blogrow' ),
 	'panel'       => 'options',
 ) );
 Kirki::add_section( 'layout', array(
     'priority'    => 50,
     'title'       => esc_attr__( 'Layout', 'blogrow' ),
-    'description' => esc_attr__( '', 'blogrow' ),
 	'panel'       => 'options',
 ) );
 Kirki::add_section( 'sidebars', array(
     'priority'    => 60,
     'title'       => esc_attr__( 'Sidebars', 'blogrow' ),
-    'description' => esc_attr__( '', 'blogrow' ),
 	'panel'       => 'options',
 ) );
 Kirki::add_section( 'social', array(
     'priority'    => 70,
     'title'       => esc_attr__( 'Social Links', 'blogrow' ),
-    'description' => esc_attr__( '', 'blogrow' ),
 	'panel'       => 'options',
 ) );
 Kirki::add_section( 'styling', array(
     'priority'    => 80,
     'title'       => esc_attr__( 'Styling', 'blogrow' ),
-    'description' => esc_attr__( '', 'blogrow' ),
 	'panel'       => 'options',
 ) );
 
@@ -128,7 +118,6 @@ Kirki::add_field( 'blogrow_theme', array(
 	'type'			=> 'text',
 	'settings'		=> 'front-button-text',
 	'label'			=> esc_attr__( 'Button Text', 'blogrow' ),
-	'description'	=> esc_attr__( '', 'blogrow' ),
 	'section'		=> 'frontpage',
 	'default'		=> '',
 ) );
@@ -137,7 +126,6 @@ Kirki::add_field( 'blogrow_theme', array(
 	'type'			=> 'text',
 	'settings'		=> 'front-button-link',
 	'label'			=> esc_attr__( 'Button Link', 'blogrow' ),
-	'description'	=> esc_attr__( '', 'blogrow' ),
 	'section'		=> 'frontpage',
 	'default'		=> '',
 ) );
@@ -146,7 +134,6 @@ Kirki::add_field( 'blogrow_theme', array(
 	'type'			=> 'radio',
 	'settings'		=> 'blog-layout',
 	'label'			=> esc_attr__( 'Blog Layout', 'blogrow' ),
-	'description'	=> esc_attr__( '', 'blogrow' ),
 	'section'		=> 'blog',
 	'default'		=> 'blog-standard',
 	'choices'		=> array(
@@ -611,7 +598,6 @@ Kirki::add_field( 'blogrow_theme', array(
 		'social-target'	=> array(
 			'type'			=> 'checkbox',
 			'label'			=> esc_attr__( 'Open in new window', 'blogrow' ),
-			'description'	=> esc_attr__( '', 'blogrow' ),
 			'default'		=> false,
 		),
 	)
@@ -679,7 +665,6 @@ Kirki::add_field( 'blogrow_theme', array(
 	'type'			=> 'color',
 	'settings'		=> 'color-1',
 	'label'			=> esc_attr__( 'Primary Color', 'blogrow' ),
-	'description'	=> esc_attr__( '', 'blogrow' ),
 	'section'		=> 'styling',
 	'default'		=> '#ceac41',
 ) );
