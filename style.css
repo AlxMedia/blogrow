@@ -43,8 +43,7 @@ or the child theme's style.css and it will override the style in this file. You 
 	12. Child Menu
 	13. Plugins
 	14. Flexslider
-	15. Shortcodes
-	16. IE Fixes
+	15. Owl Carousel
 	
 /* ------------------------------------------------------------------------- */
 
@@ -90,6 +89,7 @@ strong { font-weight: 600; }
 .left,.alignleft { float: left; }
 .right,.alignright { float: right; }
 .aligncenter { margin-left: auto; margin-right: auto; }
+hr { border: 0; background: #eee; border-bottom: 2px solid #eee; height: 1px; margin: 30px 0; }
 
 /*  base : clear
 /* ------------------------------------ */
@@ -1368,41 +1368,3 @@ user-select: none;
 .owl-theme .owl-controls.clickable .owl-page:hover span{ filter: Alpha(Opacity=100);/*IE7 fix*/	opacity: 1; }
 .owl-theme .owl-controls .owl-page span.owl-numbers{ height: auto; width: auto;	color: #FFF; padding: 2px 10px; font-size: 12px; -webkit-border-radius: 30px; -moz-border-radius: 30px;	border-radius: 30px; }
 .owl-item.loading{ min-height: 150px; background: url(AjaxLoader.gif) no-repeat center center; }
-
-
-/* ------------------------------------------------------------------------- *
- *  Shortcodes
-/* ------------------------------------------------------------------------- */
-
-/*  shortcode : dropcap
-/* ------------------------------------ */
-.dropcap { color: #444; display: block; float: left; font-size: 94px; line-height: 0.8em; font-weight: 600; margin: 0 10px 0 0; }
-
-/*  shortcode : pullquotes
-/* ------------------------------------ */
-.pullquote-left	{ color: #444; border-left: 6px solid #eee; float: left; margin: 0.78em 1em 0.78em 0; padding: 0 0 0 20px; font-weight: 600; width: 40%; }
-.pullquote-right { color: #444; border-right: 6px solid #eee; float: right; margin: 0.78em 0 0.78em 1em; padding: 0 20px 0 0; font-weight: 600; width: 40%; }
-
-/*  shortcode : highlights
-/* ------------------------------------ */
-.highlight { color: #222; border-bottom: 1px dotted #222; }
-
-/*  shortcode : hr
-/* ------------------------------------ */
-hr, .hr { border: 0; background: #eee; border-bottom: 2px solid #eee; height: 1px; margin: 30px 0; }
-
-
-/* ------------------------------------------------------------------------- *
- *  IE Fixes
-/* ------------------------------------------------------------------------- */
-.ie8 .author-bio .bio-avatar:after,
-.ie8 .commentlist li.bypostauthor > .comment-body:after { display: none; }
-
-.ie8 .nav li > a:after { content: ""!important; }
-.ie8 .nav > li > a:after { content: ""!important; }
-.ie8 .thumb-icon,
-.ie8 .image-caption,
-.ie8 .page-image-text .description i,
-.ie8 #owl-featured .item-overlay,
-.ie8 .flex-direction-nav a { background: url(img/ie/opacity-70.png); }
-.ie8 .entry .gallery .gallery-caption { background: url(img/ie/opacity-80-light.png); }
