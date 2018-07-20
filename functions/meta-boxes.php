@@ -25,16 +25,6 @@ function blogrow_get_meta_box( $meta_boxes ) {
 		'autosave' => false,
 		'fields' => array(
 			array(
-				'id' => $prefix . 'heading',
-				'type' => 'text',
-				'name' => esc_html__( 'Heading', 'blogrow' ),
-			),
-			array(
-				'id' => $prefix . 'subheading',
-				'type' => 'text',
-				'name' => esc_html__( 'Subheading', 'blogrow' ),
-			),
-			array(
 				'id' => $prefix . 'sidebar_primary',
 				'name' => esc_html__( 'Primary Sidebar', 'blogrow' ),
 				'type' => 'select',
