@@ -105,15 +105,6 @@ Kirki::add_field( 'blogrow_theme', array(
 	'section'		=> 'general',
 	'default'		=> 'on',
 ) );
-// General: RSS Feed
-Kirki::add_field( 'blogrow_theme', array(
-	'type'			=> 'text',
-	'settings'		=> 'rss-feed',
-	'label'			=> esc_attr__( 'FeedBurner URL', 'blogrow' ),
-	'description'	=> esc_attr__( 'Enter your full FeedBurner URL (or any other preferred feed URL) if you wish to use FeedBurner over the standard WordPress feed e.g. http://feeds.feedburner.com/yoururlhere', 'blogrow' ),
-	'section'		=> 'general',
-	'default'		=> '',
-) );
 // General: Post Comments
 Kirki::add_field( 'blogrow_theme', array(
 	'type'			=> 'switch',
