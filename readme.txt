@@ -2,7 +2,7 @@
 Contributors: alxmedia
 Requires at least: 4.9
 Tested up to: 4.9
-Version: 1.0.2
+Version: 1.0.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
@@ -55,6 +55,21 @@ License: CC0 1.0 Universal (CC0 1.0)
 Source: http://pixabay.com/
 
 == Changelog ==
+
+= 1.0.3 - 2018-07-20 =
+* Added support for custom-logo
+* Added support for custom-header
+* Added support for custom-background
+* Updated meta dates to use wordpress settings
+* Changed function names from alx_ to blogrow_
+* Fixed undefined index notices/errors for Alx Tabs and Alx Posts widgets
+* Fixed all theme sniffer errors
+* Removed settings for page/post comments on/off, already exist in core
+* Removed custom.css option, already exist in core
+* Removed feedburner url option, plugin territory
+* Removed heading/subheading page fields, not allowed
+* Removed IE8 compatibility javascript and css
+* Numerous other required fixes for wordpress.org
 
 = 1.0.2 - 2018-07-15 =
 * Added option for mobile menu
