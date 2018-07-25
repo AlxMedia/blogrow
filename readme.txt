@@ -46,6 +46,10 @@ Flexslider, Copyright WooThemes
 License: GPLv2 or later
 Source: http://flexslider.woothemes.com/
 
+OwlCarousel, Copyright Bartosz Wojciechowski
+License: MIT
+Source: http://www.owlgraphic.com/owlcarousel/
+
 FitVids, Copyright Chris Coyier
 License: WTFPL
 Source: http://fitvidsjs.com/
