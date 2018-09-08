@@ -235,7 +235,7 @@ if ( ! function_exists( 'blogrow_layout_class' ) ) {
 		else $layout = get_theme_mod('layout-global',''.$default.'');
 		
 		// Return layout class
-		return $layout;
+		return esc_attr( $layout );
 	}
 	
 }
