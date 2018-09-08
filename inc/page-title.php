@@ -35,13 +35,13 @@
 		<h1><i class="fa fa-tags"></i><?php esc_html_e('Tagged:','blogrow'); ?> <span><?php echo single_tag_title('', false); ?></span></h1>
 		
 	<?php elseif ( is_day() ): ?>
-		<h1><i class="fa fa-calendar"></i><?php esc_html_e('Daily Archive:','blogrow'); ?> <span><?php echo get_the_time('F j, Y'); ?></span></h1>
+		<h1><i class="fa fa-calendar"></i><?php esc_html_e('Daily Archive:','blogrow'); ?> <span><?php echo esc_html( get_the_time('F j, Y') ); ?></span></h1>
 		
 	<?php elseif ( is_month() ): ?>
-		<h1><i class="fa fa-calendar"></i><?php esc_html_e('Monthly Archive:','blogrow'); ?> <span><?php echo get_the_time('F Y'); ?></span></h1>
+		<h1><i class="fa fa-calendar"></i><?php esc_html_e('Monthly Archive:','blogrow'); ?> <span><?php echo esc_html( get_the_time('F Y') ); ?></span></h1>
 			
 	<?php elseif ( is_year() ): ?>
-		<h1><i class="fa fa-calendar"></i><?php esc_html_e('Yearly Archive:','blogrow'); ?> <span><?php echo get_the_time('Y'); ?></span></h1>
+		<h1><i class="fa fa-calendar"></i><?php esc_html_e('Yearly Archive:','blogrow'); ?> <span><?php echo esc_html( get_the_time('Y') ); ?></span></h1>
 		
 		<?php elseif ( has_post_format('audio') ): ?>
 			<h1><i class="fa fa-volume-up"></i><?php esc_html_e('Type:','blogrow'); ?> <span><?php esc_html_e('Audio','blogrow'); ?></span></h1>

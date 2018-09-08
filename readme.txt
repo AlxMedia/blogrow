@@ -2,10 +2,10 @@
 Contributors: alxmedia
 Requires at least: 4.9
 Tested up to: 4.9
-Version: 1.0.3
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Tags: one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
+Version: 1.0.4
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl-3.0
+Tags: blog, one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, custom-logo, custom-header, custom-background
 
 == Description ==
 
@@ -20,6 +20,7 @@ Blogrow is a responsive 100% high resolution theme for personal blogs. The featu
 
 == Copyright ==
 
+Blogrow WordPress Theme, Copyright 2018 AlxMedia
 Blogrow is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
@@ -34,8 +35,8 @@ GNU General Public License for more details.
 
 Blogrow bundles the following third-party resources:
 
-Font Awesome icons, Copyright Dave Gandy
-License: SIL Open Font License, version 1.1.
+Font Awesome, Copyright Dave Gandy
+License: SIL OFL 1.1 (Fonts); MIT (CSS)
 Source: http://fontawesome.com/
 
 Titillium font, Copyright Accademia di Belle Arti di Urbino
@@ -54,11 +55,26 @@ FitVids, Copyright Chris Coyier
 License: WTFPL
 Source: http://fitvidsjs.com/
 
+Kirki, Copyright Aristeides Stathopoulos
+License: MIT
+Source: https://github.com/aristath/kirki
+
 Screenshot images
 License: CC0 1.0 Universal (CC0 1.0)
 Source: http://pixabay.com/
 
 == Changelog ==
+
+= 1.0.4 - 2018-09-08 =
+* Moved plugin territory features to companion plugin
+* Added missing style.css tags
+* Updated style.css edit warning
+* Updated .pot language file
+* Fixed gallery widget styling
+* Fixed translation issues
+* Fixed missing escaping issues
+* Fixed broken layout options
+* Added missing credits in readme
 
 = 1.0.3 - 2018-07-20 =
 * Added support for custom-logo
