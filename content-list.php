@@ -1,6 +1,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('entry group'); ?>>	
 	
-	<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+	<a href="<?php the_permalink(); ?>">
 		<?php if ( has_post_thumbnail() ): ?>
 			<?php the_post_thumbnail('blogrow-small'); ?>
 		<?php else: ?>
@@ -13,7 +13,7 @@
 		<header class="entry-header">
 			<div class="entry-category"><?php the_category(' / '); ?></div>
 			<h2 class="entry-title">
-				<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+				<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 			</h2><!--/.entry-title-->
 		</header>
 			
