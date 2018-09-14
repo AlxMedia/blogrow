@@ -86,24 +86,6 @@ Kirki::add_field( 'blogrow_theme', array(
 	'section'		=> 'general',
 	'default'		=> 'on',
 ) );
-// General: Post Comments
-Kirki::add_field( 'blogrow_theme', array(
-	'type'			=> 'switch',
-	'settings'		=> 'post-comments',
-	'label'			=> esc_html__( 'Post Comments', 'blogrow' ),
-	'description'	=> esc_html__( 'Comments on posts', 'blogrow' ),
-	'section'		=> 'general',
-	'default'		=> 'on',
-) );
-// General: Page Comments
-Kirki::add_field( 'blogrow_theme', array(
-	'type'			=> 'switch',
-	'settings'		=> 'page-comments',
-	'label'			=> esc_html__( 'Page Comments', 'blogrow' ),
-	'description'	=> esc_html__( 'Comments on pages', 'blogrow' ),
-	'section'		=> 'general',
-	'default'		=> 'off',
-) );
 // General: Recommended Plugins
 Kirki::add_field( 'blogrow_theme', array(
 	'type'			=> 'switch',
