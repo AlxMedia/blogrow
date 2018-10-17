@@ -718,34 +718,41 @@ if ( ! function_exists( 'blogrow_flexslider_gallery' ) ) {
 
 	function blogrow_flexslider_gallery() {
 
-		if( has_post_format( 'gallery' ) ) {
+		if( ( is_home() || is_single() || is_archive() || is_search() ) && have_posts() ) {
+			while( have_posts() ) {
+				the_post();
 
-			$script = '
-			jQuery(document).ready(function(){
-				var firstImage = jQuery("#flexslider-' . get_the_ID() . '").find("img").filter(":first"),
-				   checkforloaded = setInterval(function() {
-					   var image = firstImage.get(0);
-					   if (image.complete || image.readyState == "complete" || image.readyState == 4) {
-						   clearInterval(checkforloaded);
-						   jQuery("#flexslider-' . get_the_ID() . '").flexslider({
-							   animation: "fade",
-							   slideshow: false,
-							   directionNav: true,
-							   controlNav: false,
-							   pauseOnHover: true,
-							   slideshowSpeed: 7000,
-							   animationSpeed: 600,
-							   smoothHeight: true,
-							   touch: false
-						   });
-					   }
-				   }, 20);
-			   });
-			';
+				if( get_post_format() && get_post_format() === 'gallery' ) {
+					
+					$script = '
+					jQuery(document).ready(function(){
+						var firstImage = jQuery("#flexslider-' . get_the_ID() . '").find("img").filter(":first"),
+						   checkforloaded = setInterval(function() {
+							   var image = firstImage.get(0);
+							   if (image.complete || image.readyState == "complete" || image.readyState == 4) {
+								   clearInterval(checkforloaded);
+								   jQuery("#flexslider-' . get_the_ID() . '").flexslider({
+									   animation: "fade",
+									   slideshow: false,
+									   directionNav: true,
+									   controlNav: false,
+									   pauseOnHover: true,
+									   slideshowSpeed: 7000,
+									   animationSpeed: 600,
+									   smoothHeight: true,
+									   touch: false
+								   });
+							   }
+						   }, 20);
+					   });
+					';
 
-			wp_add_inline_script( 'blogrow-scripts', $script );
-			
+					wp_add_inline_script( 'blogrow-scripts', $script );
+					
+				}
+			}
 		}
+	
 	}
 	
 }
