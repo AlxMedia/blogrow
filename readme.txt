@@ -63,6 +63,14 @@ Screenshot images
 License: CC0 1.0 Universal (CC0 1.0)
 Source: http://pixabay.com/
 
+Header images
+1. ID 677770 - https://pixabay.com/en/person-male-man-looking-sitting-677770/ - CC0 1.0 Universal (CC0 1.0)
+2. ID 642118 - https://pixabay.com/en/woman-photo-taking-picture-642118/ - CC0 1.0 Universal (CC0 1.0)
+3. ID 569349 - https://pixabay.com/en/cafe-man-sitting-people-male-569349/ - CC0 1.0 Universal (CC0 1.0)
+
+Content images
+1. ID 2626753 - https://pixabay.com/en/girl-woman-smile-smiling-happy-2626753/ - CC0 1.0 Universal (CC0 1.0)
+
 == Changelog ==
 
 = 1.0.4 - 2018-09-08 =
