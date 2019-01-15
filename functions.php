@@ -73,6 +73,10 @@ if ( ! function_exists( 'blogrow_setup' ) ) {
 		add_image_size( 'blogrow-medium', 520, 292, true );
 		add_image_size( 'blogrow-large', 740 );
 		add_image_size( 'blogrow-featured', 600, 400, true );
+		
+		// Thumbnail sizes custom widgets
+		add_image_size( 'alx-small', 200, 200, true );
+		add_image_size( 'alx-medium', 520, 292, true );
 
 		// Custom menu areas
 		register_nav_menus( array(
