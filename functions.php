@@ -665,10 +665,6 @@ if ( ! function_exists( 'blogrow_plugins' ) ) {
 				array(
 					'name' => esc_html__( 'WP-PageNavi', 'blogrow' ),
 					'slug' => 'wp-pagenavi',
-				),
-				array(
-					'name' => esc_html__( 'Responsive Lightbox', 'blogrow' ),
-					'slug' => 'responsive-lightbox',
 				)
 			);	
 			tgmpa( $plugins );
@@ -744,3 +740,15 @@ if ( ! function_exists( 'blogrow_flexslider_gallery' ) ) {
 	
 }
 add_action( 'wp_enqueue_scripts', 'blogrow_flexslider_gallery' );
+
+
+/*  Accessibility IE11 fix - https://git.io/vWdr2
+/* ------------------------------------ */
+function blogrow_skip_link_focus_fix() {
+	?>
+	<script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+	</script>
+	<?php
+}
+add_action( 'wp_print_footer_scripts', 'blogrow_skip_link_focus_fix' );

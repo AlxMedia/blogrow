@@ -125,7 +125,11 @@ a,
 .child-menu .current_page_item > a,
 .wp-pagenavi a { color: '.esc_attr( get_theme_mod('color-1') ).'; }
 
+.themeform input[type="button"],
+.themeform input[type="reset"],
 .themeform input[type="submit"],
+.themeform button[type="button"],
+.themeform button[type="reset"],
 .themeform button[type="submit"],
 .slant-onleft,
 .slant-onright,
