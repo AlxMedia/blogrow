@@ -65,15 +65,18 @@ Source: https://github.com/aristath/kirki
 
 Screenshot images
 License: CC0 1.0 Universal (CC0 1.0)
-Source: http://pixabay.com/
+Source: https://stocksnap.io
 
 Header images
-1. ID 677770 - https://pixabay.com/en/person-male-man-looking-sitting-677770/ - CC0 1.0 Universal (CC0 1.0)
-2. ID 642118 - https://pixabay.com/en/woman-photo-taking-picture-642118/ - CC0 1.0 Universal (CC0 1.0)
-3. ID 569349 - https://pixabay.com/en/cafe-man-sitting-people-male-569349/ - CC0 1.0 Universal (CC0 1.0)
+1. https://stocksnap.io/photo/23H66MTGXA - CC0 1.0 Universal (CC0 1.0)
+2. https://stocksnap.io/photo/Y01VDYAX63 - CC0 1.0 Universal (CC0 1.0)
+3. https://stocksnap.io/photo/DGYLV0KMUY - CC0 1.0 Universal (CC0 1.0)
 
 Content images
-1. ID 2626753 - https://pixabay.com/en/girl-woman-smile-smiling-happy-2626753/ - CC0 1.0 Universal (CC0 1.0)
+1. https://stocksnap.io/photo/SA20YXQRC4 - CC0 1.0 Universal (CC0 1.0)
+
+Sidebar images
+1. https://stocksnap.io/photo/23H66MTGXA - CC0 1.0 Universal (CC0 1.0)
 
 == Changelog ==
 
