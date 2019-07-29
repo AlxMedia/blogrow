@@ -1,7 +1,7 @@
 /*
 Theme Name: Blogrow
 Theme URI: http://alx.media/themes/blogrow/
-Version: 1.1.1
+Version: 1.1.2
 Description: <a href="http://alx.media/themes/blogrow/">Blogrow</a> is a responsive 100% high resolution theme for personal blogs. The feature list is long: Unlimited accent colors, unlimited widget areas, 0-1 sidebars to the left or right that can be uniquely specified for each page or post, 300px fixed width sidebar, 0-4 footer widget columns, almost zero layout images, related posts and post nav, post formats, good SEO, 2 flexible custom widgets, localisation support, social links, logo upload and many more useful admin panel features.
 Author: Alexander Agnarson
 Author URI: http://alx.media
@@ -100,7 +100,26 @@ hr { border: 0; background: #eee; border-bottom: 2px solid #eee; height: 1px; ma
 
 /*  base : font awesome square size
 /* ------------------------------------ */
-.fa { width: 1em; text-align: center; }
+.fa, .fab, .fal, .far, .fas { width: 1em; text-align: center; }
+
+/* temporary font awesome 5 fix for alx-extensions plugin */
+.sharrre-header .share .fa:before,
+.sharrre-footer .share .fa:before { font-family: "Font Awesome 5 Brands"; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }
+.sharrre-header .fa-twitter:before { content: "\f099"; }
+.sharrre-header .fa-facebook-square:before { content: "\f082"; }
+.sharrre-header .fa-pinterest:before { content: "\f0d2"; }
+.sharrre-header .fa-linkedin-square:before { content: "\f08c"; }
+.sharrre-header .count .fa:before,
+.sharrre-footer .count .fa:before,
+.alx-tabs-nav i:before { font-family: "Font Awesome 5 Free"; font-weight: 900; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }
+.sharrre-header .count .fa-plus:before { content: "\f067"; }
+.sharrre-footer .count .fa-plus:before { content: "\f067"; }
+.sharrre-footer .fa-twitter:before { content: "\f099"; }
+.sharrre-footer .fa-facebook-square:before { content: "\f082"; }
+.alx-tabs-nav .fa-clock-o:before { content: "\f017"; }
+.alx-tabs-nav .fa-star:before { content: "\f005"; }
+.alx-tabs-nav .fa-comments-o:before { content: "\f086"; }
+.alx-tabs-nav .fa-tags:before { content: "\f02c"; }
 
 /*  base : fonts
 /* ------------------------------------ */
@@ -220,7 +239,7 @@ input, textarea, button, select, label { font-family: inherit; }
 
 .themeform.searchform div { position: relative; }
 .themeform.searchform div input { padding-left: 26px; line-height: 20px; }
-.themeform.searchform div:after { color: #ccc; line-height: 24px; font-size: 14px; content: "\f002"; position: absolute; left: 10px; top: 6px; font-family: FontAwesome; }
+.themeform.searchform div:after { color: #ccc; line-height: 24px; font-size: 14px; content: "\f002"; position: absolute; left: 10px; top: 6px; font-family: "Font Awesome 5 Free"; font-weight: 900; }
 
 /*  base : entry
 /* ------------------------------------ */
@@ -243,7 +262,7 @@ input, textarea, button, select, label { font-family: inherit; }
 .entry-content address { margin-bottom: 1em; }
 .entry-content blockquote { position: relative; color: #777; font-style: italic; margin: 0 0 20px 0; padding-left: 50px; }
 .entry-content blockquote p { margin-bottom: 0.75em; }
-.entry-content blockquote:before { content: "\f10d"; color: #ccc; font-size: 32px; font-style: normal; font-family: FontAwesome; text-align: center; position: absolute; left: 0; top: 0; }
+.entry-content blockquote:before { content: "\f10d"; color: #ccc; font-size: 32px; font-style: normal; font-family: "Font Awesome 5 Free"; font-weight: 900; text-align: center; position: absolute; left: 0; top: 0; }
 .entry-content blockquote.twitter-tweet:before { content: "\f099"; }
 .entry-content code, .entry-content pre { font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace; font-size: 11px; }
 .entry-content pre { background: url(img/pre.png) repeat top; padding: 18px 20px; margin: 30px 0; border: 1px solid #ddd; line-height: 19px; white-space: pre-wrap; word-wrap: break-word; overflow-x: auto; overflow-y: hidden; }
@@ -455,7 +474,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 .thumb-icon .fa-play { margin: -1px 0 0 2px; }
 .thumb-icon.small { width: 24px; height: 24px; position: absolute; bottom: 50%; left: 50%; margin: 0 0 -12px -12px;
 -webkit-border-radius: 4px; border-radius: 4px; }
-.thumb-icon.small .fa { font-size: 14px; line-height: 16px; padding: 5px 0; }
+.thumb-icon.small i { font-size: 14px; line-height: 16px; padding: 5px 0; }
 .thumb-icon.small .f-play { margin: -1px 0 0 2px; }
 
 /*  common : nav
@@ -465,7 +484,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 .nav-toggle i { font-size: 29px; padding: 10px 0; }
 .nav-text { display: none; float: right; font-size: 16px; line-height: 24px; padding: 13px 20px; }
 .nav li > a:after,
-.nav > li > a:after { font-family: FontAwesome; display: inline-block; }
+.nav > li > a:after { font-family: "Font Awesome 5 Free"; font-weight: 900; display: inline-block; }
 
 @media only screen and (min-width: 720px) {
 	
@@ -601,7 +620,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 /*  header : search
 /* ------------------------------------ */
 .toggle-search { color: #444; font-size: 18px; border-left: 1px dotted #eee; border-right: 1px dotted #eee; line-height: 24px; cursor: pointer; padding: 18px 16px; display: block; position: absolute; right: 40px; top: -60px; }
-.toggle-search.active .fa.fa-search:before { content: "\f00d"; font-size: 22px; }
+.toggle-search.active i:before { content: "\f00d"; font-size: 22px; }
 .search-expand { display: none; background: #fff; border-left: 1px solid #eee; position: absolute; top: -60px; right: 92px; width: 340px; }
 .search-expand-inner { padding: 11px; border-bottom: 1px solid rgba(255,255,255,0.3);  }
 .search-expand .themeform input { background: #fff; width: 100%; border: 1px solid #eee; border-radius: 0; }
@@ -746,7 +765,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 .entry-author-avatar img { height: 32px; width: 32px; -webkit-border-radius: 100%; border-radius: 100%; }
 .entry-author { color: #999; float: left; }
 .entry-date { color: #999; float: right; margin-bottom: 20px; }
-.entry-date .fa { margin-right: 6px; }
+.entry-date i { margin-right: 6px; }
 
 
 /* ------------------------------------------------------------------------- *
@@ -947,7 +966,7 @@ transition: all 0.2s ease-out; }
 .widget > ul li:before,
 .widget > ul li a:before,
 .widget > div > ul li a:before,
-.widget_calendar caption:before { font-family: FontAwesome; font-size: 12px; margin-right: 6px; color: #ccc; display: inline-block!important; width: 1em; text-align: center; }
+.widget_calendar caption:before { font-family: "Font Awesome 5 Free"; font-weight: 900; font-size: 12px; margin-right: 6px; color: #ccc; display: inline-block!important; width: 1em; text-align: center; }
 .widget > ul li a:hover:before { color: #999; }
 
 .widget_archive > ul > li a:before { content: "\f073"; } 
@@ -1120,7 +1139,7 @@ transition: all 0.2s ease-out; }
 .commentlist .fn, .pinglist .ping-link { color: #444; font-size: 13px; font-style: normal; font-weight: 600; }
 .commentlist .says { display: none; }
 .commentlist .avatar { position: absolute; left: -60px; top: 0; width: 48px; height: 48px; -webkit-border-radius: 100%; border-radius: 100%; }
-.commentlist .comment-meta:before, .pinglist .ping-meta:before { color: #ccc; content: "\f017"; font-family: FontAwesome; font-size: 10px; margin-right: 3px; vertical-align: 4%; } 
+.commentlist .comment-meta:before, .pinglist .ping-meta:before { color: #ccc; content: "\f017"; font-family: "Font Awesome 5 Free"; font-weight: 900; font-size: 10px; margin-right: 3px; vertical-align: 4%; } 
 .commentlist .comment-meta a, .pinglist .ping-meta { color: #aaa; }
 .commentlist .reply { font-size: 13px; line-height: 16px; }
 .commentlist .reply a { color: #aaa; }
@@ -1139,10 +1158,10 @@ transition: all 0.2s ease-out; }
 
 /* post author & admin comment */
 .commentlist li.bypostauthor > .comment-body:after,
-.commentlist li.comment-author-admin > .comment-body:after { background: #ceac41; display: block; position: absolute; content: "\f040"; color: #fff; line-height: 12px; width: 12px; font-style: normal; font-family: FontAwesome; text-align: center; }
+.commentlist li.comment-author-admin > .comment-body:after { background: #ceac41; display: block; position: absolute; content: "\f303"; color: #fff; line-height: 12px; width: 12px; font-style: normal; font-family: "Font Awesome 5 Free"; font-weight: 900; text-align: center; }
 .commentlist li.comment-author-admin > .comment-body:after { content: "\f005"; /* star for admin */ }
 .commentlist li.bypostauthor > .comment-body:after,
-.commentlist li.comment-author-admin > .comment-body:after { top: 32px; left: -28px; font-size: 10px; padding: 3px; -webkit-border-radius: 100%; border-radius: 100%; }
+.commentlist li.comment-author-admin > .comment-body:after { top: 32px; left: -28px; font-size: 8px; padding: 3px; -webkit-border-radius: 100%; border-radius: 100%; }
 .commentlist li li.bypostauthor > .comment-body:after,
 .commentlist li li.comment-author-admin > .comment-body:after { top: 22px; left: -26px; font-size: 8px; padding: 2px; -webkit-border-radius: 100%; border-radius: 100%; }
 
@@ -1230,7 +1249,7 @@ li #reply-title { font-size: 0; margin: 0!important; padding: 0; height: 0; bord
 /* level 2 */
 .child-menu > li > ul { border-top: 1px solid #ddd; border-bottom: 1px solid #fbfbfb; }
 .child-menu > li > ul > li > a { font-size: 15px; border: 1px solid #ddd; border-top: 0; padding: 11px 20px; }
-.child-menu > li > ul > li > a:before { font-family: FontAwesome; content: "\f055"; font-weight: normal; font-size: 18px; margin-right: 8px; }
+.child-menu > li > ul > li > a:before { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f055"; font-size: 18px; margin-right: 8px; }
 
 /* level 3 */
 .child-menu > li ul ul { background: #f2f2f2; border: 1px solid #ddd; border-top: 0; padding: 6px 0; }
@@ -1249,7 +1268,7 @@ li #reply-title { font-size: 0; margin: 0!important; padding: 0; height: 0; bord
 .wp-pagenavi a,
 .wp-pagenavi span { color: #aaa; font-size: 16px; padding: 7px 8px; display: inline-block; margin: 0 2px 10px; }
 .wp-pagenavi span.pages { font-size: 17px; font-weight: 300; display: block; margin-bottom: 1em!important; border: none!important; }
-.wp-pagenavi span.pages:before { content: "\f15c"; font-family: FontAwesome; margin-right: 6px; }
+.wp-pagenavi span.pages:before { content: "\f15c"; font-family: "Font Awesome 5 Free"; font-weight: 900; margin-right: 6px; }
 .wp-pagenavi span.extend { border: none!important; border-bottom: 3px solid transparent; border-top: 1px solid transparent; }
 .wp-pagenavi a:hover,
 .wp-pagenavi a:active,
@@ -1324,7 +1343,7 @@ html[xmlns] .slides { display: block; }
 .flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default; }
 
 /* direction nav arrows */
-.flex-direction-nav a:before { color: #fff; font-family: FontAwesome; font-size: 20px; line-height: 24px; position: absolute; text-align: center; left: 0; right: 0; top: 9px; text-indent: 0; }
+.flex-direction-nav a:before { color: #fff; font-family: "Font Awesome 5 Free"; font-weight: 900; font-size: 20px; line-height: 24px; position: absolute; text-align: center; left: 0; right: 0; top: 9px; text-indent: 0; }
 .flex-direction-nav .flex-next:before { content:"\f054"; }
 .flex-direction-nav .flex-prev:before { content: "\f053"; }
 

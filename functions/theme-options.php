@@ -533,7 +533,7 @@ Kirki::add_field( 'blogrow_theme', array(
 	'label'			=> esc_html__( 'Create Social Links', 'blogrow' ),
 	'description'	=> esc_html__( 'Create and organize your social links', 'blogrow' ),
 	'section'		=> 'social',
-	'tooltip'		=> esc_html__( 'Font Awesome names:', 'blogrow' ) . ' <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank"><strong>' . esc_html__( 'View All', 'blogrow' ) . ' </strong></a>',
+	'tooltip'		=> esc_html__( 'Font Awesome names:', 'blogrow' ) . ' <a href="https://fontawesome.com/icons?d=gallery&s=brands&m=free" target="_blank"><strong>' . esc_html__( 'View All', 'blogrow' ) . ' </strong></a>',
 	'row_label'		=> array(
 		'type'	=> 'text',
 		'value'	=> esc_html__('social link', 'blogrow' ),
@@ -550,7 +550,7 @@ Kirki::add_field( 'blogrow_theme', array(
 		'social-icon'	=> array(
 			'type'			=> 'text',
 			'label'			=> esc_html__( 'Icon Name', 'blogrow' ),
-			'description'	=> esc_html__( 'Font Awesome icons. Ex: fa-facebook ', 'blogrow' ) . ' <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank"><strong>' . esc_html__( 'View All', 'blogrow' ) . ' </strong></a>',
+			'description'	=> esc_html__( 'Font Awesome icons. Ex: fa-facebook ', 'blogrow' ) . ' <a href="https://fontawesome.com/icons?d=gallery&s=brands&m=free" target="_blank"><strong>' . esc_html__( 'View All', 'blogrow' ) . ' </strong></a>',
 			'default'		=> 'fa-',
 		),
 		'social-link'	=> array(

@@ -23,7 +23,7 @@
 		<footer class="entry-footer group">
 			<div class="entry-author-avatar"><?php echo get_avatar(get_the_author_meta('user_email'),'64'); ?></div>
 			<div class="entry-author"><?php esc_html_e('by','blogrow'); ?> <?php the_author_posts_link(); ?></div>
-			<div class="entry-date updated"><i class="fa fa-clock-o"></i><?php the_time( get_option('date_format') ); ?></div>
+			<div class="entry-date updated"><i class="far fa-clock"></i><?php the_time( get_option('date_format') ); ?></div>
 		</footer>
 		
 	</div><!--/.entry-inner-->
