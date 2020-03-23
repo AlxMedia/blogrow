@@ -189,7 +189,7 @@ if ( ! function_exists( 'blogrow_styles' ) ) {
 	
 	function blogrow_styles() {
 		wp_enqueue_style( 'blogrow-style', get_stylesheet_uri() );
-		if ( get_theme_mod('responsive','on') =='on' ) { wp_enqueue_style( 'blogrow-responsive', get_template_directory_uri().'/responsive.css' ); }
+		wp_enqueue_style( 'blogrow-responsive', get_template_directory_uri().'/responsive.css' );
 		wp_enqueue_style( 'blogrow-font-awesome', get_template_directory_uri().'/fonts/all.min.css' );
 	}
 	
