@@ -72,7 +72,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 body { background: #f2f2f2; font-size: 16px; line-height: 1.5em; color: #444; font-weight: 300; }
 ::selection { background: #ceac41; color: #fff; }
 ::-moz-selection { background: #ceac41; color: #fff; }
-a { color: #ceac41; text-decoration: none; outline: 0; }
+a { color: #ceac41; text-decoration: none; }
 a:hover { color: #222; }
 img { max-width: 100%; height: auto; }
 a,
