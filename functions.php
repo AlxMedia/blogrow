@@ -87,6 +87,19 @@ if ( ! function_exists( 'blogrow_setup' ) ) {
 add_action( 'after_setup_theme', 'blogrow_setup' );
 
 
+/*  Custom navigation
+/* ------------------------------------ */
+require_once 'functions/nav.php';
+$nav = new \AlxMedia\Nav();
+$nav->enqueue(
+	[
+		'script' => 'js/nav.js',
+		'inline' => false,
+	]
+);
+$nav->init();
+
+
 /*  Custom logo
 /* ------------------------------------ */
 if ( ! function_exists( 'blogrow_custom_logo' ) ) {

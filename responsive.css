@@ -40,8 +40,9 @@
 	.page-title { font-size: 20px; }
 
 	/* header */
-	.toggle-search { right: auto; left: 0; top: 0; border-right: 1px solid #eee; padding-top: 12px; padding-bottom: 12px; }
-	.search-expand { left: 50px; right: auto; top: 0; width: 220px; }
+	.toggle-search { right: auto; left: 0; top: -52px; border-right: 1px solid #eee; padding-top: 12px; padding-bottom: 12px; }
+	.toggle-search.active { padding-top: 15px; padding-bottom: 15px; }
+	.search-expand { left: 56px; right: auto; top: -50px; width: 220px; border-left: 0; }
 	.search-expand-inner { padding: 5px; }
 	.site-title a img { max-height: 60px!important; }
 	
