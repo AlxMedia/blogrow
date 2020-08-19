@@ -95,10 +95,10 @@ if ( ! function_exists( 'blogrow_dynamic_css' ) ) {
 			// container width
 			if ( get_theme_mod('container-width', '1160') != '1160' ) {			
 				if ( get_theme_mod( 'boxed' ) ) { 
-					$styles .= '.boxed #wrapper, .container { max-width: '.esc_attr( get_theme_mod('container-width') ).'px; }'."\n";
+					$styles .= '.boxed #wrapper, .container, #header .nav-menu:not(.mobile) { max-width: '.esc_attr( get_theme_mod('container-width') ).'px; }'."\n";
 				}
 				else {
-					$styles .= '.container { max-width: '.esc_attr( get_theme_mod('container-width') ).'px; }'."\n";
+					$styles .= '.container, #header .nav-menu:not(.mobile) { max-width: '.esc_attr( get_theme_mod('container-width') ).'px; }'."\n";
 				}
 			}
 			// primary color

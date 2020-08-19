@@ -541,7 +541,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 
 /*  header : search
 /* ------------------------------------ */
-.toggle-search { background: transparent; z-index: 5; color: #444; font-size: 18px; border: 0; border-left: 1px dotted #eee; border-right: 1px dotted #eee; line-height: 24px; cursor: pointer; padding: 17px 14px 15px; display: block; position: absolute; right: 40px; top: -60px; }
+.toggle-search { background: transparent; outline: none; z-index: 5; color: #444; font-size: 18px; border: 0; border-left: 1px dotted #eee; border-right: 1px dotted #eee; line-height: 24px; cursor: pointer; padding: 17px 14px 15px; display: block; position: absolute; right: 40px; top: -60px; }
 .search-expand { display: none; background: #fff; border-left: 1px solid #eee; position: absolute; top: -60px; right: 92px; width: 340px; z-index: 4; }
 .search-expand-inner { padding: 11px; border-bottom: 1px solid rgba(255,255,255,0.3);  }
 .search-expand .themeform input { background: #fff; width: 100%; border: 1px solid #eee; border-radius: 0; }
@@ -695,7 +695,8 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 .nav-menu.mobile ul ul button { border-left: 1px solid rgba(0,0,0,0.07); }
 
 /* menu header styling */
-#header-menu-topbar { background: #fff; box-shadow: 0 1px rgba(0,0,0,0.1), 0 3px 3px rgba(0,0,0,0.04); position: relative; z-index: 3; }
+#header-menu-topbar,
+#header-menu-mobile { background: #fff; box-shadow: 0 1px rgba(0,0,0,0.1), 0 3px 3px rgba(0,0,0,0.04); position: relative; z-index: 3; }
 #header .nav-menu:not(.mobile) > div { padding: 0 40px; }
 #header .nav-menu:not(.mobile) { max-width: 1160px; margin: 0 auto; padding-top: 0; padding-bottom: 0; }
 #header .nav-menu:not(.mobile) .menu > li { margin-top: 0; }
