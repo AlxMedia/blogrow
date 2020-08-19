@@ -2,7 +2,7 @@
 Contributors: alxmedia
 Requires at least: 5.0
 Tested up to: 5.5
-Version: 1.1.8
+Version: 1.1.9
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0
 Tags: blog, one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, custom-logo, custom-header, custom-background
@@ -80,7 +80,10 @@ Sidebar images
 
 == Changelog ==
 
-= 1.0.8 - 2020-08-19 =
+= 1.1.9 - 2020-08-19 =
+* Fixed minor header search issue
+
+= 1.1.8 - 2020-08-19 =
 * Improved a11y
 * Added new menu
 
