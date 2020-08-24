@@ -689,10 +689,10 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 .nav-menu.mobile ul ul { background: rgba(0,0,0,0.03); }
 .nav-menu.mobile ul li .menu-item-wrapper,
 .nav-menu.mobile ul ul li .menu-item-wrapper { border-bottom: 1px solid rgba(0,0,0,0.07); }
-.nav-menu.mobile > div > ul > li:first-child .menu-item-wrapper { border-top: 1px solid rgba(0,0,0,0.07); }
 .nav-menu.mobile ul li a { color: #333; }
 .nav-menu.mobile ul button,
 .nav-menu.mobile ul ul button { border-left: 1px solid rgba(0,0,0,0.07); }
+.nav-menu.mobile > div > ul { border-top: 1px solid rgba(0,0,0,0.07); }
 
 /* menu header styling */
 #wrap-nav-topbar,
