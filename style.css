@@ -1,7 +1,7 @@
 /*
 Theme Name: Blogrow
 Theme URI: http://alx.media/themes/blogrow/
-Version: 1.1.9
+Version: 1.2.0
 Requires at least: 5.0
 Requires PHP: 5.6
 Tested up to: 5.5
@@ -570,10 +570,10 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 
 /* menu hide and display */
 @media only screen and (min-width: 720px) {
-	.mobile-menu #nav-mobile-nav { display: none; }
+	.mobile-menu #wrap-nav-mobile { display: none; }
 }
 @media only screen and (max-width: 719px) {
-	.mobile-menu #nav-topbar-nav { display: none; } 
+	.mobile-menu #wrap-nav-topbar { display: none; } 
 	#nav-mobile,
 	#nav-topbar { display: none; }
 	.mobile #nav-mobile,
