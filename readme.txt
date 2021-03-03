@@ -1,7 +1,7 @@
 === Blogrow ===
 Contributors: alxmedia
 Requires at least: 5.0
-Tested up to: 5.5
+Tested up to: 5.6
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0
 Tags: blog, one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, custom-logo, custom-header, custom-background
@@ -23,7 +23,7 @@ http://alx.media/documentation/
 
 == Copyright ==
 
-Blogrow WordPress Theme, Copyright 2018 AlxMedia
+Blogrow WordPress Theme, Copyright 2021 AlxMedia
 Blogrow is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
@@ -38,29 +38,35 @@ GNU General Public License for more details.
 
 Blogrow bundles the following third-party resources:
 
-Font Awesome, Copyright Dave Gandy
+Font Awesome
+Copyright (c) Dave Gandy
 License: SIL OFL 1.1 (Fonts); MIT (CSS)
-Source: http://fontawesome.com/
+Source: https://fontawesome.com/
 
-Titillium font, Copyright Accademia di Belle Arti di Urbino
-License: SIL Open Font License, version 1.1.
+Titillium Font
+Copyright (c) Accademia di Belle Arti di Urbino
+License: SIL OFL 1.1
 Source: http://www.campivisivi.net/titillium/
 
-Flexslider, Copyright WooThemes
+Flexslider
+Copyright (c) WooThemes
 License: GPLv2 or later
 Source: http://flexslider.woothemes.com/
 
-OwlCarousel, Copyright Bartosz Wojciechowski
+OwlCarousel
+Copyright (c) Bartosz Wojciechowski
 License: MIT
 Source: http://www.owlgraphic.com/owlcarousel/
 
-FitVids, Copyright Chris Coyier
+FitVids
+Copyright (c) Chris Coyier
 License: WTFPL
 Source: http://fitvidsjs.com/
 
-Kirki, Copyright Aristeides Stathopoulos
+Kirki
+Copyright (c) David Vongries
 License: MIT
-Source: https://github.com/aristath/kirki
+Source: https://kirki.org/
 
 Screenshot images
 License: CC0 1.0 Universal (CC0 1.0)
@@ -78,6 +84,19 @@ Sidebar images
 1. https://stocksnap.io/photo/23H66MTGXA - CC0 1.0 Universal (CC0 1.0)
 
 == Changelog ==
+
+= 1.2.1 - 2021-03-03 =
+* Fixed: mobile menu tabbing will enter in the menu even when it's closed
+* Fixed: add styles to focus states of menu and search
+* Fixed: trap focus in search popup
+* Fixed: prefix for custom menu names and classes
+* Fixed: readme format to declare license information
+* Fixed: make sure that the pingback_url is conditional since pings can be turned off
+* Fixed: added no minified font awesome css
+* Increased menu dropdown width
+* Added option to disable custom navigation in child themes
+* Updated language files
+* Updated to Font Awesome Free 5.15.2
 
 = 1.2.0 - 2020-08-24 =
 * Fixed markup of header and footer menus
