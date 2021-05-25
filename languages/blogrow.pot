@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Blogrow\n"
-"POT-Creation-Date: 2021-03-03 16:27+0100\n"
+"POT-Creation-Date: 2021-05-25 13:40+0200\n"
 "PO-Revision-Date: 2018-09-21 21:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -77,47 +77,47 @@ msgstr ""
 msgid "Topbar"
 msgstr ""
 
-#: functions.php:174
+#: functions.php:176
 msgid "Primary"
 msgstr ""
 
-#: functions.php:174
+#: functions.php:176
 msgid "Normal full width sidebar"
 msgstr ""
 
-#: functions.php:175
+#: functions.php:177
 msgid "Footer 1"
 msgstr ""
 
-#: functions.php:175 functions.php:176 functions.php:177 functions.php:178
+#: functions.php:177 functions.php:178 functions.php:179 functions.php:180
 msgid "Widgetized footer"
 msgstr ""
 
-#: functions.php:176
+#: functions.php:178
 msgid "Footer 2"
 msgstr ""
 
-#: functions.php:177
+#: functions.php:179
 msgid "Footer 3"
 msgstr ""
 
-#: functions.php:178
+#: functions.php:180
 msgid "Footer 4"
 msgstr ""
 
-#: functions.php:669
+#: functions.php:671
 msgid "Alx Extensions"
 msgstr ""
 
-#: functions.php:673
+#: functions.php:675
 msgid "Meta Box"
 msgstr ""
 
-#: functions.php:677
+#: functions.php:679
 msgid "Regenerate Thumbnails"
 msgstr ""
 
-#: functions.php:681
+#: functions.php:683
 msgid "WP-PageNavi"
 msgstr ""
 
