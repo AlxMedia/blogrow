@@ -1,7 +1,7 @@
 === Blogrow ===
 Contributors: alxmedia
 Requires at least: 5.0
-Tested up to: 5.6
+Tested up to: 5.8
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0
 Tags: blog, one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, custom-logo, custom-header, custom-background
