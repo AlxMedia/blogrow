@@ -85,6 +85,9 @@ Sidebar images
 
 == Changelog ==
 
+= 1.2.3 - 2021-07-03 =
+* Updated to Kirki 3.1.8
+
 = 1.2.2 - 2021-05-25 =
 * Fixed compatibility issue with custom nav and various security plugins
 * Updated language files
