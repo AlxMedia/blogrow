@@ -85,6 +85,10 @@ Sidebar images
 
 == Changelog ==
 
+= 1.2.5 - 2021-07-23 =
+* Disabled support for widgets block editor
+* Updated language files
+
 = 1.2.4 - 2021-07-19 =
 * Updated to Kirki 3.1.9
 
