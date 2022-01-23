@@ -1,7 +1,7 @@
 === Blogrow ===
 Contributors: alxmedia
 Requires at least: 5.0
-Tested up to: 5.8
+Tested up to: 5.9
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0
 Tags: blog, news, entertainment, one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, custom-logo, custom-header, custom-background, footer-widgets
@@ -84,6 +84,9 @@ Sidebar images
 1. https://stocksnap.io/photo/23H66MTGXA - CC0 1.0 Universal (CC0 1.0)
 
 == Changelog ==
+
+= 1.2.7 - 2022-01-24 =
+* Updated to Kirki 4.0
 
 = 1.2.6 - 2021-08-25 =
 * Added missing theme tags for wordpress.org
